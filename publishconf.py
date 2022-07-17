@@ -10,8 +10,8 @@ from pelicanconf import *
 SITEURL = 'https://fs-berlin67.github.io/biolog-website/'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+FEED_ALL_ATOM = ''
+CATEGORY_FEED_ATOM = ''
 
 DELETE_OUTPUT_DIRECTORY = True
 

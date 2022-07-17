@@ -15,6 +15,11 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+PLUGINS = None
+
+MAIN_PAGES = (('Impressum', 'pages/impressum.html'),
+              ('Installation', 'pages/installation.html'))
+
 # Blogroll
 LINKS = (('Pelican', 'https://getpelican.com/'),
          ('Python.org', 'https://www.python.org/'),

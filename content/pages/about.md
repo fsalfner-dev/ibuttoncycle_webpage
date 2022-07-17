@@ -1,4 +1,5 @@
 Title: Impressum
+Template: page
 
 # Impressum
 

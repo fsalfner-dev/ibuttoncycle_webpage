@@ -1,6 +1,6 @@
 Title: Impressum
 Template: page
+Summary: Auf dieser Seite werden die rechtliche Verantwortlichkeit, inhaltliche Verantwortung etc. aufgedröselt
 
-# Impressum
-
+# Rechtlich Verantwortlich
 Felix Salfner

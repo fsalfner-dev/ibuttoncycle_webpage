@@ -105,19 +105,15 @@
             <div class="col-12 col-lg-4">
                 <h2 class="display-4 lh-1 mb-4">Installation</h2>
                 <p class="lead fw-normal text-muted mb-3">So richten Sie die BioLog App ein.</p>
-                <div class=""><a href="#" class="btn btn-sm btn-outline-secondary mb-5">Alles zur Installation lesen ...</a></div>
+                <div class=""><a href="/category/installation.html" class="btn btn-sm btn-outline-secondary mb-5">Alles zur Installation lesen ...</a></div>
             </div>
             <div class="col-12 col-lg-8">
                 <div class="row g-2 justify-content-between">
-                  <div class="col-12 col-lg-6">
-                    {{ macros.article_summary(title='Erste Schritte', summary='Lesen Sie wie man die App einrichtet in einer Schritt-für-Schritt einladung') }}
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    {{ macros.article_summary(title='Erste Schritte', summary='Lesen Sie wie man die App einrichtet in einer Schritt-für-Schritt einladung') }}
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    {{ macros.article_summary(title='Erste Schritte', summary='Lesen Sie wie man die App einrichtet in einer Schritt-für-Schritt einladung') }}
-                  </div>
+                  {% for article in articles|selectattr('star_prio')|selectattr('category','equalto','installation')|sort(attribute="star_prio,date") %}
+                    <div class="col-12 col-lg-6">
+                      {{ macros.article_summary(article) }}
+                    </div>
+                  {% endfor %}
                 </div>
             </div>
         </div>
@@ -129,19 +125,15 @@
             <div class="col-12 col-lg-4">
                 <h2 class="display-4 lh-1 mb-4">Benutzung</h2>
                 <p class="lead fw-normal text-muted mb-3">So nutzen Sie die BioLog App zur natürlichen Familienplanung.</p>
-                <div class=""><a href="#" class="btn btn-sm btn-outline-secondary mb-5">Alles zur Benutzung lesen ...</a></div>
+                <div class=""><a href="/category/benutzung.html" class="btn btn-sm btn-outline-secondary mb-5">Alles zur Benutzung lesen ...</a></div>
             </div>
             <div class="col-12 col-lg-8">
                 <div class="row g-2 justify-content-between">
-                  <div class="col-12 col-lg-6">
-                    {{ macros.article_summary(title='Erste Schritte', summary='Lesen Sie wie man die App einrichtet in einer Schritt-für-Schritt einladung') }}
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    {{ macros.article_summary(title='Erste Schritte', summary='Lesen Sie wie man die App einrichtet in einer Schritt-für-Schritt einladung') }}
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    {{ macros.article_summary(title='Erste Schritte', summary='Lesen Sie wie man die App einrichtet in einer Schritt-für-Schritt einladung') }}
-                  </div>
+                  {% for article in articles|selectattr('star_prio')|selectattr('category','equalto','benutzung')|sort(attribute="star_prio,date") %}
+                    <div class="col-12 col-lg-6">
+                      {{ macros.article_summary(article) }}
+                    </div>
+                  {% endfor %}
                 </div>
             </div>
         </div>

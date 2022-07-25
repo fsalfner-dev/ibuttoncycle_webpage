@@ -1,9 +1,9 @@
-{% macro article_summary(article, show_date=false) -%}
+{% macro article_summary(article, url,show_date=false) -%}
     <div class="card shadow-sm">
       <div class="card-body" style="background-color:#222222; color:#dddddd"><h5>{{ article.title }}</h5></div>
       <div class="card-body">
         <p class="card-text">{{ article.summary }}</p>
-      <a href="{{SITEURL}}/{{ article.url }}" class="btn btn-sm btn-outline-secondary">Weiterlesen ...</a>
+      <a href="{{url}}" class="btn btn-sm btn-outline-secondary">Weiterlesen ...</a>
       {% if show_date %}
         {{ article.date }}
         {% endif %}

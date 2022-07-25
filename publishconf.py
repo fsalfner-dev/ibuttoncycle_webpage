@@ -8,7 +8,7 @@ from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = 'https://fs-berlin67.github.io/biolog-website/'
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 
 FEED_ALL_ATOM = ''
 CATEGORY_FEED_ATOM = ''

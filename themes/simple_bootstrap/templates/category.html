@@ -26,7 +26,7 @@
           <div class="row g-2 justify-content-start">
             {% for article in articles|rejectattr('star_prio')|sort(attribute="date") %}
             <div class="col-12 col-lg-4">
-                {{ macros.article_summary(article, SITEURL ~ "/" ~ article.url) }}
+                {{ macros.article_summary(article, SITEURL ~ "/" ~ article.url, show_date=true) }}
               </div>
             {% endfor %}
           </div>

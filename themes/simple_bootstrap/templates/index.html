@@ -111,7 +111,7 @@
                 <div class="row g-2 justify-content-between">
                   {% for article in articles|selectattr('star_prio')|selectattr('category','equalto','installation')|sort(attribute="star_prio,date") %}
                     <div class="col-12 col-lg-6">
-                      {{ macros.article_summary(article) }}
+                      {{ macros.article_summary(article, SITEURL ~ "/" ~ article.url) }}
                     </div>
                   {% endfor %}
                 </div>
@@ -131,7 +131,7 @@
                 <div class="row g-2 justify-content-between">
                   {% for article in articles|selectattr('star_prio')|selectattr('category','equalto','benutzung')|sort(attribute="star_prio,date") %}
                     <div class="col-12 col-lg-6">
-                      {{ macros.article_summary(article) }}
+                      {{ macros.article_summary(article, SITEURL ~ "/" ~ article.url) }}
                     </div>
                   {% endfor %}
                 </div>

@@ -17,11 +17,24 @@ Starten Sie die App.
 
 Sie werden zunächst gefragt, wo die Daten gespeichert werden sollen.
 
-![images/storage_location_selection.png]
+<div class="container text-center">
+    <div class="row justify-content-center">
+        <div class="col-4 col-sm-12 align-items-center">
+            <img src="{filename}../images/screenshot_setup_1.jpeg" class="max-width:100%" alt="Screenshot zur Auswahl des Speicherorts" />
+        </div>
+    </div>
+</div>
+
+
+ddd
+
+![Screenshot zur Auswahl des Speicherorts]({filename}../images/screenshot_setup_1.jpeg)
+
 
 Die beiden Optionen bedeuten folgendes:
 
 * **Lokale Speicherung:** 
+   
 
 DAs geht so:
 

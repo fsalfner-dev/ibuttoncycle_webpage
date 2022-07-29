@@ -1,4 +1,5 @@
 pelican[markdown]
 webassets
 pelican-webassets
+pelican-jinja2content
 libsass

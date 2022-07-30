@@ -253,8 +253,15 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem; } }
 
 .bg-alternate {
-  background-color: #b0d4f9; }
+  background-color: #fad4d9; }
 
 .article-card-header {
   background-color: #222222;
   color: #dddddd; }
+
+body a {
+  color: #393939;
+  text-decoration: underline; }
+
+footer a {
+  color: rgba(255, 255, 255, 0.5); }

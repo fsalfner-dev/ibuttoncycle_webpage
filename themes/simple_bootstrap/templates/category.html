@@ -12,6 +12,9 @@
       </section>
       <section id="selected" class="bg-light py-5">
         <div class="container px-5">
+          <div class="row pb-3">
+            <h3>Die wichtigsten Beiträge</h3>
+          </div>
           <div class="row g-2 justify-content-start">
             {% for article in articles|selectattr('star_prio')|sort(attribute="star_prio,date") %}
             <div class="col-12 col-lg-4">
@@ -23,6 +26,9 @@
       </section>
       <section id="content" class="bg-alternate py-5">
         <div class="container px-5">
+          <div class="row pb-3">
+            <h3>Alle weiteren Beiträge</h3>
+          </div>
           <div class="row g-2 justify-content-start">
             {% for article in articles|rejectattr('star_prio')|sort(attribute="date") %}
             <div class="col-12 col-lg-4">

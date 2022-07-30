@@ -15,12 +15,16 @@
   </div>
 {%- endmacro %}
 
-{% macro center_image(src, alt) -%}
+{% macro center_image(src, alt, width=3, padding=3, align='start') -%}
 <div class="container">
-  <div class="row d-flex justify-content-center">
-      <div class="col-md-4">
+  <div class="row d-flex justify-content-{{align}} pb-{{padding}}">
+      <div class="col-md-{{width}}">
           <img src="{{src}}" class="img-fluid rounded-3 shadow" alt="{{alt}}">
       </div>
   </div>
 </div>
+{%- endmacro %}
+
+{% macro spacer(padding=3) -%}
+<div class="py-{{padding}}"></div>
 {%- endmacro %}

@@ -99,17 +99,17 @@
       </div>
   </section>
 
-  <section id="installation" class="bg-light">
+  <section id="einrichtung" class="bg-light">
     <div class="container px-5">
         <div class="row gx-5 align-items-start justify-content-center justify-content-lg-between">
             <div class="col-12 col-lg-4">
-                <h2 class="display-4 lh-1 mb-4">Installation</h2>
+                <h2 class="display-4 lh-1 mb-4">Einrichtung</h2>
                 <p class="lead fw-normal text-muted mb-3">So richten Sie die BioLog App ein.</p>
-                <div class=""><a href="{{SITEURL}}/category/installation.html" class="btn btn-sm btn-outline-secondary mb-5">Alles zur Installation lesen ...</a></div>
+                <div class=""><a href="{{SITEURL}}/category/einrichtung.html" class="btn btn-sm btn-outline-secondary mb-5">Alles zur Einrichtung der App lesen ...</a></div>
             </div>
             <div class="col-12 col-lg-8">
                 <div class="row g-2 justify-content-between">
-                  {% for article in articles|selectattr('star_prio')|selectattr('category','equalto','installation')|sort(attribute="star_prio,date") %}
+                  {% for article in articles|selectattr('star_prio')|selectattr('category','equalto','einrichtung')|sort(attribute="star_prio,date") %}
                     <div class="col-12 col-lg-6">
                       {{ macros.article_summary(article, SITEURL ~ "/" ~ article.url) }}
                     </div>

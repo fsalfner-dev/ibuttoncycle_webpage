@@ -18,7 +18,7 @@ Starten Sie die App.
 
 Sie werden zunächst gefragt, wo die Daten gespeichert werden sollen.
 
-{{ macros.center_image("{filename}../images/screenshot_setup_1.jpeg", "Screenshot zu Setup: Auswahl des Speicherorts") }}
+{{ macros.center_image("{static}../images/screenshot_setup_1.jpeg", "Screenshot zu Setup: Auswahl des Speicherorts") }}
 
 Die beiden Optionen bedeuten folgendes:
 
@@ -34,7 +34,7 @@ Wählen Sie die Option **Speicherung auf dem Telefon** und tippen Sie auf **Los 
 
 In der BioLog App sind alle Daten in einer Reihe aufgelistet, die vom heutigen Datum Zyklus für Zyklus in die Vergangenheit gehen. Der Anfang der Liste ist der erste Tag der Periode des ersten in der App erfassten Zyklus. Dieses Datum muss in diesem Schritt ausgewählt werden.
 
-{{ macros.center_image("{filename}../images/screenshot_setup_3.png", "Screenshot zu Setup: Information zur Datumsauswahl") }}
+{{ macros.center_image("{static}../images/screenshot_setup_3.png", "Screenshot zu Setup: Information zur Datumsauswahl") }}
 
 **Vorbereitung zur Auswahl des Datums:**
 
@@ -49,7 +49,7 @@ Wählen Sie das Datum der ersten in der App erfassten Periode nach folgenden Kri
 * Im darauffolgenden Dialog wählen Sie das eben ausgewählte Datum als "Beginn der BioLog Zeitrechnung".
 * Tippen Sie auf **OK** 
 
-{{ macros.center_image("{filename}../images/screenshot_setup_datumswahl.png", "Screenshot zu Setup: Auswahl des Datums der ersten Periode", padding=4) }}
+{{ macros.center_image("{static}../images/screenshot_setup_datumswahl.png", "Screenshot zu Setup: Auswahl des Datums der ersten Periode", padding=4) }}
 
 ## 4: Eintragung der weiteren Perioden
 
@@ -58,7 +58,7 @@ Die Vorhersage des Beginns der nächsten Periode basiert auf der Dauer früherer
 #### 4.1: Ausgangssituation
 
 Wenn Sie nach Setzen des ersten Periodendatums (Schritt 3) ganz nach unten scrollen, sehen Sie eine Ansicht wie die folgende:
-{{ macros.center_image("{filename}../images/screenshot_first_period_set.png", "Screenshot zu Setup: Anzeige nach Auswahl des ersten Periodendatums") }}
+{{ macros.center_image("{static}../images/screenshot_first_period_set.png", "Screenshot zu Setup: Anzeige nach Auswahl des ersten Periodendatums") }}
 
 * Jede Zeile entspricht einem Kalendertag.
 * Die Zeile ist rot eingefärbt, wenn Sie an diesem Tag Ihre Periode hatten.
@@ -68,7 +68,7 @@ Wenn Sie nach Setzen des ersten Periodendatums (Schritt 3) ganz nach unten scrol
 #### 4.2: Markieren eines Tages als Periodenbeginn
 
 Durch Drücken auf die Zeile (im Beispiel der 12.6.2022) können Eintragungen für den gewählten Tag gemacht werden. Die Eintragungen werden mit einem Bildschirm wie dem folgenden gemacht:
-{{ macros.center_image("{filename}../images/screenshot_set_period.png", "Screenshot zu Setup: Setzen der Periodenstärke") }}
+{{ macros.center_image("{static}../images/screenshot_set_period.png", "Screenshot zu Setup: Setzen der Periodenstärke") }}
 Sie markieren den gewählten Tag als Periodenbeginn wie folgt:
 
 * Drücken Sie auf den (orange umrandeten) Winkel in der Karte "Periode"
@@ -78,14 +78,14 @@ Sie markieren den gewählten Tag als Periodenbeginn wie folgt:
 
 Sie gelangen zurück zum NFP Screen, in dem der gewählte Tag nun rot eingefärbt ist. Der Tag ist nun auch der erste Tag eines neuen Zyklus.
 
-{{ macros.center_image("{filename}../images/screenshot_after_setting_next_period.png", "Screenshot zu Setup: NFP Anzeige nach Setzen des nächsten Periodenbeginns", padding=4) }}
+{{ macros.center_image("{static}../images/screenshot_after_setting_next_period.png", "Screenshot zu Setup: NFP Anzeige nach Setzen des nächsten Periodenbeginns", padding=4) }}
 
 #### 4.3: Eintragung aller weiteren Daten des Periodenbeginns 
 Markieren Sie nach obigem Schema alle Tage, an denen Ihre Periode eingesetzt hat. Sie können natürlich auch beliebige weitere Eintragungen machen. 
 
 Nach Abschluss aller Eintragungen sehen Sie am oberen Bildschirmrand eine Vorhersage für das Einsetzen der nächsten Regelblutung:
 
-{{ macros.center_image("{filename}../images/screenshot_finished_setup.png", "Screenshot zu Setup: Periodenvorhersage nach Abschluss", padding=4) }}
+{{ macros.center_image("{static}../images/screenshot_finished_setup.png", "Screenshot zu Setup: Periodenvorhersage nach Abschluss", padding=4) }}
 
 ## Fertig!
 

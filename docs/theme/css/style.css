@@ -265,3 +265,8 @@ body a {
 
 footer a {
   color: rgba(255, 255, 255, 0.5); }
+
+.summary p {
+  margin-bottom: 0px;
+  padding-top: 1em;
+  font-style: italic; }

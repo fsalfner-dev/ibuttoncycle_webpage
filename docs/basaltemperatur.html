@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BioLog App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fs-berlin67.github.io/biolog-website/theme/css/style.css?bd240ead">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://fs-berlin67.github.io/biolog-website/theme/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://fs-berlin67.github.io/biolog-website/theme/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://fs-berlin67.github.io/biolog-website/theme/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="https://fs-berlin67.github.io/biolog-website/theme/images/icons/site.webmanifest">
+    <link rel="mask-icon" href="https://fs-berlin67.github.io/biolog-website/theme/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>  <body>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand pl-5 pr-3" href="https://fs-berlin67.github.io/biolog-website/#">
+            <img src="https://fs-berlin67.github.io/biolog-website/theme/images/icons/biolog2_transparent_small.png" alt="" height="24" class="d-inline-block align-text-top mx-2">
+            BioLog
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+<li class="nav-item">
+    <a class="nav-link" href="category/benutzung.html">Benutzung</a>
+</li>
+        </ul>
+      </div>
+    </div>
+  </nav>    <main>
+      <section id="summary" class="bg-alternate py-5">
+        <div class="container px-5">
+          <div class="row jusitfy-content-between align-items-end">
+            <div class="col-md-8 align-bottom">
+              <h1 class="display-2 lh-1 mb-0">Basaltemperatur</h1>
+            </div>
+            <div class="col-md-4 text-end small fst-italic">Datum 01.08.2022</div>
+          </div>
+        </div>
+      </section>
+      <section id="selected" class="bg-light py-5">
+        <div class="container px-5">
+            <h1>Einführung zu Basaltemperaturen</h1>
+<h3>Erklärungen zur Farbgebung der Tage</h3>
+<p>Jeder Tag trägt eine von drei Farben:</p>
+<ul>
+<li>rot, falls an diesem Tag eine Monatsblutung war</li>
+<li>grau, solange noch kein verlässlicher Temperaturanstieg festgestellt wurde</li>
+<li>grün, ab dem Tag, ab dem ein verlässlicher Temperaturanstieg festgestellt wurde (bis zur nächsten Periode)</li>
+</ul>
+<div class="container">
+  <div class="row d-flex justify-content-center pb-3">
+      <div class="col-md-3">
+          <img src="https://fs-berlin67.github.io/biolog-website/images/screenshot_nfp_colors_explained.png" class="img-fluid rounded-3 shadow" alt="Erklärung zur Farbgebung">
+      </div>
+  </div>
+</div>
+
+<p>Ein verlässlicher Temperaturanstieg wird nach der <a href="https://www.mynfp.de/temperatur-auswerten">hier</a> erklärten Methode bestimmt. Der erste grün dargestellte Tag ist <strong>nicht der Tag der ersten höheren Messung, sondern der Tag nachdem die Regeln einen Temperaturanstieg bestätigen</strong>. In den meisten Fällen ist dies der dritte Tag nach der ersten höheren Messung. Kann kein verlässlicher Temperaturanstieg erkannt werden, bleiben die Tage grau. </p>
+<h5>Handhabung von Ausnahmen</h5>
+<p>Die Basaltemperatur ist ein wichtiger Bestandteil der symptothermalen Methode. Die Temperaturmessungen können aber verfälscht sein, z.B. durch</p>
+<ul>
+<li>Krankheit</li>
+<li>Konsum von Alkohol   </li>
+<li>Sportliche Anstrengungen</li>
+<li>Heiße Außentemperaturen</li>
+<li>...</li>
+</ul>
+<p>In BioLog können Temperaturmesswerte übersprungen werden, das heißt, sie werden vom Algorithmus zur Erkennung des Temperaturanstiegs ausgenommen. Um einen Messwert zu überspringen, setzen Sie den entsprechenden Tag als "Messwert ignorieren", wie im nächsten Screenshot dargestellt:</p>
+<div class="container">
+  <div class="row d-flex justify-content-center pb-3">
+    <div class="col-md-8 col-l-3 ms-auto">
+      <div class="device-wrapper">
+        <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+          <div class="screen bg-black">
+            <img src="https://fs-berlin67.github.io/biolog-website/images/screenshot_ignore_temperature.png" alt="Screenshot zum ignorieren von Messwerten" style="max-width: 100%; height: 100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Temperaturmesswerte, die für die Auswertung des Temperaturanstiegs ignoriert werden, werden durch einen ausgegrauten Punkt dargestellt.</p>
+<h5><i class="bi bi-exclamation-triangle"></i> Wichtiger Hinweis</h5>
+
+<p>Grün eingefärbte Tage beziehen sich <strong>ausschließlich auf die Temperatur</strong>. Die symptothermale Methode verlangt zusätzlich zur Temperatur <strong>ein zweites Symptom</strong>:</p>
+<ul>
+<li>Die Beschaffenheit des Gebärmutterschleims</li>
+<li>Der Zustand des Gebärmutterhalses</li>
+</ul>
+<p>BioLog unterstützt (noch) ausschließlich die Beschaffenheit des Gebärmutterschleims.</p>
+<p><strong>Die unfruchtbare Phase kann dadurch eventuell erst später beginnen, obwohl die Tage schon grün markiert sind!</strong> </p>
+<p>Der folgende Screenshot zeigt einen beispielhaften Verlauf:</p>
+<div class="container">
+  <div class="row d-flex justify-content-center pb-3">
+    <div class="col-md-8 col-l-3 ms-auto">
+      <div class="device-wrapper">
+        <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+          <div class="screen bg-black">
+            <img src="https://fs-berlin67.github.io/biolog-website/images/screenshot_nfp_mucus.png" alt="Screenshot eines beispielhaften Verlaufs der Gebärmutterschleimbeschaffenheit" style="max-width: 100%; height: 100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p><i class="bi bi-exclamation-triangle"></i><strong> Warnhinweis:</strong> </p>
+<p>Der Screenshot oben gibt ein Beispiel für den Fall, in dem die grüne Einfärbung der Zyklustage irreführend sein kann: Der 15. Tag des Zyklus (Freitag der 22.7.) ist aufgrund des Temperaturanstiegs grün markiert (die erste höhere Messung war am 12. Zyklustag). Die Regeln zur Auswertung der Beschaffenheit des Gebärmutterschleims verlangen allerdings drei aufeinanderfolgende Tage mit schlechterer Schleimqualität. Diese Auswertungsregel ist erst ab dem 16. Zyklustag erfüllt. <strong>Der erste unfruchtbare Tag ist daher erst der 16. Zyklustag und nicht, der aufgrund des Temperaturanstiegs grün eingefärbte 15. Zyklustag!</strong></p>
+<div class="container">
+  <div class="row d-flex justify-content-center pb-3">
+    <div class="col-md-8 col-l-3 ms-auto">
+      <div class="device-wrapper">
+        <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+          <div class="screen bg-black">
+            <img src="https://fs-berlin67.github.io/biolog-website/images/screenshot_nfp_explanation.png" alt="Überblick über die Visualisierungselemente" style="max-width: 100%; height: 100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </section>
+    </main>
+<footer class="bg-dark py-3">
+    <div class="container text-center">
+        <div class="row align-items-between">
+            <div class="col justify-content-center text-white-50 bg-dark">
+                &copy; Felix Salfner 2022
+            </div>
+            <div class="col">
+                <a href="https://fs-berlin67.github.io/biolog-website/pages/impressum.html">Impressum</a>
+            </div>
+            <div class="col">
+                <a href="https://fs-berlin67.github.io/biolog-website/pages/datenschutzerklarung.html">Datenschutz</a>
+            </div>
+        </div>
+    </div>
+</footer>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

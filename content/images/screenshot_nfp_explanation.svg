@@ -8,6 +8,9 @@
    height="2532"
    viewBox="0 0 1170 2532"
    sodipodi:docname="screenshot_nfp_explanation.png"
+   inkscape:export-filename="/Users/felixprivat/Documents/Cloud/GitHub/biolog-website/content/images/screenshot_nfp_explanation.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
    inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -15,7 +18,22 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs828" />
+     id="defs828">
+    <marker
+       style="overflow:visible;"
+       id="Arrow2Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round;"
+         id="path15334" />
+    </marker>
+  </defs>
   <sodipodi:namedview
      id="namedview826"
      pagecolor="#ffffff"
@@ -26,8 +44,8 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="0.24526066"
-     inkscape:cx="583.05314"
-     inkscape:cy="1266"
+     inkscape:cx="452.57971"
+     inkscape:cy="1347.5459"
      inkscape:window-width="1394"
      inkscape:window-height="847"
      inkscape:window-x="46"
@@ -4202,5 +4220,44 @@ AElFTkSuQmCC
          id="tspan13686"
          x="159.01439"
          y="485.19812">Weitere Anmerkungen</tspan></text>
+    <g
+       id="path15311"
+       transform="matrix(0.94123983,0,0,1,26.23324,-0.90585727)">
+      <path
+         style="color:#000000;fill:#ff6600;stroke-width:7.55906;stroke-miterlimit:2;-inkscape-stroke:none"
+         d="M 199.78744,1141.6425 H 750.22222"
+         id="path15947" />
+      <path
+         style="color:#000000;fill:#ff6600;stroke-width:1.99725;stroke-miterlimit:2;-inkscape-stroke:none;stroke:none;stroke-opacity:1"
+         d="m 199.78711,1119.7997 v 30.1515 h 550.43555 v -30.1515 z"
+         id="path15949" />
+      <g
+         id="g15937"
+         transform="translate(31.705005,-7.2468582)"
+         style="fill:#ff6600;fill-opacity:1">
+        <g
+           id="path15939"
+           style="fill:#ff6600;fill-opacity:1">
+          <path
+             style="color:#000000;fill:#ff6600;fill-rule:evenodd;stroke-width:5.19685;stroke-linejoin:round;-inkscape-stroke:none;fill-opacity:1"
+             d="m 669.41254,1108.1021 90.84824,33.4073 -90.84824,33.4071 c 14.51375,-19.7235 14.43012,-46.7088 0,-66.8144 z"
+             id="path15943" />
+          <path
+             style="color:#000000;fill:#ff6600;fill-rule:evenodd;stroke-linejoin:round;-inkscape-stroke:none;fill-opacity:1"
+             d="m 670.30859,1105.6641 a 2.5986848,2.5986848 0 0 0 -3.00781,3.9531 c 13.79069,19.2147 13.85988,44.9514 0.0195,63.7598 a 2.5986848,2.5986848 0 0 0 2.98828,3.9785 l 90.84961,-33.4082 a 2.5986848,2.5986848 0 0 0 0,-4.877 z m 5.15039,7.4297 77.27344,28.416 -77.17187,28.3789 c 9.64852,-17.5992 9.55703,-38.9902 -0.10157,-56.7949 z"
+             id="path15945" />
+        </g>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:64px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff6600;fill-opacity:1;stroke:none"
+       x="265.02402"
+       y="1096.7924"
+       id="text16199"><tspan
+         sodipodi:role="line"
+         id="tspan16197"
+         x="265.02402"
+         y="1096.7924">Temperatur</tspan></text>
   </g>
 </svg>

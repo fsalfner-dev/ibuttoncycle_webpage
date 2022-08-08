@@ -1,16 +1,9 @@
 Title: Einführung in NFP
 Date: 2022-07-24
-Star_prio: 1
 Summary: Eine Einführung in die Natürliche Familienplanung
 
-# Einrichtung der App in 7 einfachen Schritten
+{% import 'macros.html' as macros %}
 
-DAs geht so:
-
-1. Runterladen
-1. Installieren
-    1. Loslegen
-    1. Weitermachen
-1. Und fertigstellen
+{{macros.info("Diese Seite befindet sich noch im Aufbau")}}
 
 

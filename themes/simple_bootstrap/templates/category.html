@@ -17,8 +17,8 @@
           </div>
           <div class="row g-2 justify-content-start">
             {% for article in articles|selectattr('star_prio')|sort(attribute="star_prio,date") %}
-            <div class="col-12 col-lg-4">
-                {{ macros.article_summary(article, SITEURL ~ "/" ~ article.url) }}
+            <div class="col-12 col-lg-6">
+                {{ macros.article_summary(article, SITEURL ~ "/" ~ article.url, show_date=true) }}
               </div>
             {% endfor %}
           </div>
@@ -30,8 +30,8 @@
             <h3>Alle weiteren Beiträge</h3>
           </div>
           <div class="row g-2 justify-content-start">
-            {% for article in articles|rejectattr('star_prio')|sort(attribute="date") %}
-            <div class="col-12 col-lg-4">
+            {% for article in articles|rejectattr('star_prio')|sort(attribute="date", reverse=true) %}
+            <div class="col-12 col-lg-6">
                 {{ macros.article_summary(article, SITEURL ~ "/" ~ article.url, show_date=true) }}
               </div>
             {% endfor %}

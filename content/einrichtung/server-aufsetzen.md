@@ -1,12 +1,7 @@
 Title: Einen eigenen Server aufsetzen
 Date: 2022-07-24
-Summary: Eine Schritt für Schritt Anleitung ohne viel Hintergrundinformation
+Summary: Detaillierte Anleitung zur Einrichtung eines BioLog Servers
 
-# Einrichtung der App in 7 einfachen Schritten
+{% import 'macros.html' as macros %}
 
-DAs geht so:
-
-1. Runterladen
-1. Installieren
-1. Loslegen
-
+{{macros.info("Diese Seite ist noch unvollständig")}}

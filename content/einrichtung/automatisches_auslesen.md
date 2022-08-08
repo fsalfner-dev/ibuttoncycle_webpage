@@ -1,13 +1,7 @@
-Title: Automatisches Auslesen eines iButtons
+Title: iButton automatisch Auslesen
 Date: 2022-07-23
-Summary: Eine Schritt für Schritt Anleitung ohne viel Hintergrundinformation
+Summary: Einrichtung eines Linux System so dass der iButton ausgelesen wird sobald man ihn anschließt.
 
-# Einrichtung der App in 7 einfachen Schritten
+{% import 'macros.html' as macros %}
 
-DAs geht so:
-
-1. Runterladen
-1. Installieren
-1. Loslegen
-
-
+{{macros.info("Diese Seite ist noch unvollständig")}}

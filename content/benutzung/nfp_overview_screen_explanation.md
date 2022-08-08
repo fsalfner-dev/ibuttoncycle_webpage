@@ -4,11 +4,10 @@ star_prio: 2
 Summary: Die Dokumentation zur Hauptansicht der BioLog App
 
 {% import 'macros.html' as macros %}
-# Die Dokumentation zur Hauptansicht der BioLog App
 
 Die Hauptansicht der BioLog App ist eine Darstellung zur thermo-symptomalen Verhütungsmethode der natürlichen Familienplanung. Diese Seite erklärt die wesentlichen Elemente.
 
-### Kalendarische Anordnung
+## Kalendarische Anordnung
 
 Da BioLog für Smartphones entwickelt wurde, verläuft die Zeitachse im Gegensatz zu den meisten anderen Apps zur Zyklusbeobachtung und natürlichen Familienplanung bei BioLog *vertikal* und nicht horizontal. Die klassische NFP Tabelle, wie sie z.B. [hier zu finden ist](https://www.familienplanung.de/fileadmin/user_upload/familienplanung.de/downloads/Zyklustabelle_1_.pdf), ist um 90° nach rechts gedreht. Das bedeutet:
 
@@ -21,7 +20,7 @@ Da BioLog für Smartphones entwickelt wurde, verläuft die Zeitachse im Gegensat
 
 {{ macros.image("{static}../images/screenshot_first_period_set.png", "Screenshot zur Erklärung der Datumsanzeige", padding=4) }}
 
-### Erklärungen zur Farbgebung der Tage
+## Erklärungen zur Farbgebung der Tage
 
 Jeder Tag trägt eine von drei Farben:
 
@@ -31,115 +30,72 @@ Jeder Tag trägt eine von drei Farben:
 
 {{ macros.image("{static}../images/screenshot_nfp_colors_explained.png", "Erklärung zur Farbgebung") }}
 
-Ein verlässlicher Temperaturanstieg wird nach der [hier](https://www.mynfp.de/temperatur-auswerten) erklärten Methode bestimmt. Der erste grün dargestellte Tag ist **nicht der Tag der ersten höheren Messung, sondern der Tag nachdem die Regeln einen Temperaturanstieg bestätigen**. In den meisten Fällen ist dies der dritte Tag nach der ersten höheren Messung. Kann kein verlässlicher Temperaturanstieg erkannt werden, bleiben die Tage grau. 
+{{ macros.info("Eine detaillierte Anleitung zur Basalthemperatur finden Sie <a href=\"{filename}temperature_explanation.md\">hier</a>")}}
 
-##### Handhabung von Ausnahmen
-
-Die Basaltemperatur ist ein wichtiger Bestandteil der symptothermalen Methode. Die Temperaturmessungen können aber verfälscht sein, z.B. durch
-
-* Krankheit
-* Konsum von Alkohol
-* Sportliche Anstrengungen
-* Heiße Außentemperaturen
-* ...
-
-In BioLog können Temperaturmesswerte übersprungen werden, das heißt, sie werden vom Algorithmus zur Erkennung des Temperaturanstiegs ausgenommen. Um einen Messwert zu überspringen, setzen Sie den entsprechenden Tag als "Messwert ignorieren", wie im nächsten Screenshot dargestellt:
-
-{{ macros.device_image("{static}../images/screenshot_ignore_temperature.png", "Screenshot zum ignorieren von Messwerten") }}
-
-<h5><i class="bi bi-exclamation-triangle"></i> Wichtiger Hinweis</h5>
-
-Grün eingefärbte Tage beziehen sich **ausschließlich auf die Temperatur**. Die symptothermale Methode verlangt zusätzlich zur Temperatur **ein zweites Symptom**:
-
-* Die Beschaffenheit des Gebärmutterschleims
-* Der Zustand des Gebärmutterhalses
-
-BioLog unterstützt (noch) ausschließlich die Beschaffenheit des Gebärmutterschleims.
-
-**Die unfruchtbare Phase kann dadurch eventuell erst später beginnen, obwohl die Tage schon grün markiert sind!** Ein Beispiel ist im nächsten Abschnitt angegeben.
+{{macros.warning("
+Grün eingefärbte Tage beziehen sich <strong>ausschließlich auf die Temperatur</strong>. Die symptothermale Methode verlangt zusätzlich zur Temperatur <strong>ein zweites Symptom</strong>:
+<ul>
+  <li>Die Beschaffenheit des Gebärmutterschleims</li>
+  <li>Der Zustand des Gebärmutterhalses (noch nicht von BioLog unterstützt)</li>
+</ul>
+<strong>Die unfruchtbare Phase kann dadurch eventuell erst später beginnen, obwohl die Tage schon grün markiert sind!</strong> Siehe das <a href=\"{filename}temperature_explanation.md\">Beispiel</a>.
+")}}
 
 
+## Erklärung zur in der NFP Übersicht verwendeten Daten und Symbole
 
-### Erklärungen zur Beschaffenheit des Gebärmutterschleims
+In der klassischen NFP Tabelle gibt es unterhalb des Temperaturverlaufs mehrere Zeilen, in denen vermerkt wird, wie die Beschaffenheit des Gebärmutterschleims war, ob man Geschlechtsverkehr hatte, oder andere Symptome aufgetreten sind. Die NFP Übersicht in BioLog zeigt diese Dinge ebenfalls an, allerdings aufgrund der 90° Drehung der Tabelle als Spalten.
 
-Die symptothermale Methode beruht auf der Erkennung eines Temperaturanstiegs zusammen mit der Beobachtung eines weiteren Symptoms, nämlich entweder der Beschaffenheit des Gebärmutterschleims oder des Zustands des Gebärmutterhalses. BioLog unterstützt die Aufzeichnung der Gebärmutterschleimbeschaffenheit. 
-Eine gute Erklärung zur Bestimmung der Beschaffenheit des Gebärmutterschleims findet sich bei [myNFP](https://www.mynfp.de/zervixschleim-beobachten).
+Der folgende Screenshot gibt einen Überblick:
+{{ macros.image("{static}../images/screenshot_nfp_explanation.png", "Übersicht über Informationen in NFP Darstelltung") }}
 
-Es werden die folgenden vier Beschaffenheiten unterschieden: `t`, `-`, `f`, `S`, `S+`
+### Darstellung der Basaltemperatur
 
-##### Bestimmung der Beschaffenheit des Gebärmutterschleims
+Neben der Angabe des Kalendertags am linken Bildschirmrand gibt ein Punkt die Basaltemperatur an. Je weiter rechts der Punkt erscheint, desto höher war die Basaltemperatur. Ignorierte Messwerte werden durch einen grauen (statt schwarzen) Punkt dargestellt.
 
-Zur Bestimmung der Beschaffenheit müssen Empfinden und Aussehen bewertet werden:
+{{macros.info("Weitere Informationen zur Basalthemperatur finden Sie <a href=\"{filename}temperature_explanation.md\">hier</a>")}}
 
-<table class="mb-5">
-<tr><th>Empfinden</th><th></th><th>Aussehen</th><th>Symbol</th></tr>
-<tr>
-  <td>trocken, trockenes, raues, juckendes, unangenehmes Gefühl</td>
-  <td class="px-3">und</td>
-  <td>nichts gesehen, kein Schleim am Scheideneingang</td>
-  <td class="fst-bold">t</td>
-</tr>
-<tr>
-  <td>nichts gefühlt, keine Feuchtigkeit, keine Empfindung am Scheideneingang</td>
-  <td class="px-3">und</td>
-  <td>nichts gesehen, kein Schleim am Scheideneingang</td>
-  <td class="fst-bold">-</td>
-</tr>  
-<tr>
-  <td>feucht</td>
-  <td class="px-3">aber</td>
-  <td>nichts gesehen, kein Schleim am Scheideneingang</td>
-  <td class="fst-bold">f</td>
-</tr>  
-<tr>
-  <td>feucht oder nichts gefühlt</td>
-  <td class="px-3">und</td>
-  <td>dicklich, weißlich, trüb, cremig, klumpig, gelblich, klebrig, milchig, nicht ziehbar oder zäh</td>
-  <td class="fst-bold">S</td>
-</tr>  
-<tr>
-  <td>feucht oder nichts gefühlt</td>
-  <td class="px-3">und</td>
-  <td>glasig, glasklar, glasig durchscheinend, wie rohes Eiweiß (glasig mit weißen Fäden durchsetzt), dehnbar fadenziehend, spinnbar, flüssig, so dünnflüssig, dass er "wegrinnt wie Wasser", rötlich, rotbraun gelblich-rötlich</td>
-  <td class="fst-bold">S+</td>
-</tr>
-<tr>
-  <td>nass, schlüpfrig, rutschig, glitschig, wie eingeölt, weich, glatt</td>
-  <td class="px-3">und/oder</td>
-  <td>glasig, glasklar, glasig durchscheinend, wie rohes Eiweiß (glasig mit weißen Fäden durchsetzt), dehnbar, fadenziehend, spinnbar, flüssig, so dünnflüssig, dass er "wegrinnt wie Wasser", rötlich, rotbraun, gelblich-rötlich</td>
-  <td class="fst-bold">S+</td>
-</tr>  
+### Darstellung der Beschaffenheit des Gebärmutterschleims
+
+Rechts neben der Anzeige der Basaltemperatur wird die Beschaffenheit des Gebärmutterschleims durch die Anzeige eines der Symbole `t`, `-`, `f`, `S`, `S+` angegeben.
+
+{{macros.info("Weitere Informationen zur Beschaffenheit des Gebärmutterschleims finden Sie <a href=\"{filename}mucus_explanation.md\">hier</a>")}}
+
+### Darstellung von Sex
+
+Um das Risiko einer Schwangerschaft besser abschätzen zu können, können Sie eintragen, wann Sie Sex hatten, und ob Sie verhütet haben oder nicht. BioLog unterscheidet die folgenden drei Fälle und stellt sie durch ein entsprechendes Symbol dar:
+
+<div class="table-responsive">
+<table class="table">
+<thead><tr><th>Art des Sex</th><th>Beschreibung</th><th>Symbol</th></thead>
+<tbody>
+<tr><th scope="row">mit Verhütung</th><td>Sie hatten Geschlechtsverkehr und haben ein Verhütungsmittel wie z.B. Kondome benutzt</td><td><img src="{static}../images/condom.png" alt="Condom icon"/></td></tr>
+<tr><th scope="row">ohne Verhütung</th><td>Sie hatten Geschlechtsverkehr und haben <strong>kein</strong> Verhütungsmittel verwendet</td><td><img src="{static}../images/sperm.png" alt="Sperm icon"/></td></tr>
+<tr><th scope="row">ohne Geschlechtsverkehr</th><td>Sie hatten Sex ohne Geschlechtsverkehr, so dass keine Gefahr einer Empfängnis besteht</td><td><img src="{static}../images/shield.png" alt="Shield icon"/></td></tr>
+</tbody>
 </table>
+</div>
 
-##### Notieren der Gebärmutterschleimbeschaffenheit in BioLog
+### Weitere Anmerkungen
 
-Um die Beschaffenheit des Gebärmutterschleims in BioLog aufzuzeichnen, führen Sie die folgenden Schritte aus:
+BioLog erlaubt die Aufzeichnung von einer ganzen Reihe von Symptomen, Notizen etc. Wenn ein Tag weitere Anmerkungen enthält, erscheint am rechten Rand ein &#9432; Symbol.
 
-1. Tippen Sie in der Hauptansicht auf den Tag für den Sie Beschaffenheit notieren wollen
-1. Tippen Sie auf den kleinen Pfeil im Abschnitt **Fruchtbarkeit**
-1. Tippen auf die blaue Schrift in der Zeile **Zervixschleim** 
-1. Wählen Sie darauf die passende Beschaffenheit
-1. Tippen Sie auf **Speichern** am oberen Bildschirmrand
+Durch tippen auf den jeweiligen Tag gelangen Sie zur Detaildarstellung, in der Sie sehen können, welche Anmerkung sich hinter dem &#9432; verbirgt.
 
-Die folgenden Screenshots zeigen den Vorgang:
+Anmerkungen können sich beziehen auf
 
-{{ macros.device_image("{static}../images/screenshot_set_mucus_1.png", "Screenshot zum Setzen der Gebärmutterschleimbeschaffenheit") }}
+* die Temperaturmessung
+* das Körpergewicht
+* Sex
+* die Fruchtbarkeitssymptome
+* die Periode
+* Körpersymptome wie Kopfschmerzen
+* Stimmungen
 
-{{ macros.device_image("{static}../images/screenshot_set_mucus_2.png", "Screenshot zur Auswahl der Gebärmutterschleimbeschaffenheit") }}
+{{macros.info("Eine detaillierte Darstellung finden Sie <a href=\"{filename}nfp_detail_screen_explanation.md\">hier</a>")}}
 
-##### Auswertung der Gebärmutterschleimbeschaffenheit zur Bestimmung der unfruchtbaren Tage
 
-Die Gebärmutterschleimbeschaffenheit gibt (zusammen mit der Basalthemperatur) Auskunft darüber, wann die unfruchtbaren Tage beginnen. Eine ausführliche Beschreibung finden Sie auf den Seiten von [myNFP](https://www.mynfp.de/temperatur-und-zervixschleim-kombinieren).
 
-Der folgende Screenshot zeigt einen beispielhaften Verlauf:
-
-{{ macros.device_image("{static}../images/screenshot_nfp_mucus.png", "Screenshot eines beispielhaften Verlaufs der Gebärmutterschleimbeschaffenheit") }}
-
-<i class="bi bi-exclamation-triangle"></i><strong> Warnhinweis:</strong> 
-
-Der Screenshot oben gibt ein Beispiel für den Fall, in dem die grüne Einfärbung der Zyklustage irreführend sein kann: Der 15. Tag des Zyklus (Freitag der 22.7.) ist aufgrund des Temperaturanstiegs grün markiert (die erste höhere Messung war am 12. Zyklustag). Die Regeln zur Auswertung der Beschaffenheit des Gebärmutterschleims verlangen allerdings drei aufeinanderfolgende Tage mit schlechterer Schleimqualität. Diese Auswertungsregel ist erst ab dem 16. Zyklustag erfüllt. **Der erste unfruchtbare Tag ist daher erst der 16. Zyklustag und nicht, der aufgrund des Temperaturanstiegs grün eingefärbte 15. Zyklustag!**
-
-{{ macros.device_image("{static}../images/screenshot_nfp_explanation.png", "Überblick über die Visualisierungselemente") }}
 
 
 

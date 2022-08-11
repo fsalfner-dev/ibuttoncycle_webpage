@@ -67,11 +67,11 @@ Um das Risiko einer Schwangerschaft besser abschätzen zu können, können Sie e
 
 <div class="table-responsive">
 <table class="table">
-<thead><tr><th>Art des Sex</th><th>Beschreibung</th><th>Symbol</th></thead>
+<thead><tr><th>Symbol</th><th>Art des Sex</th><th>Beschreibung</th></thead>
 <tbody>
-<tr><th scope="row">mit Verhütung</th><td>Sie hatten Geschlechtsverkehr und haben ein Verhütungsmittel wie z.B. Kondome benutzt</td><td><img src="{static}../images/condom.png" alt="Condom icon"/></td></tr>
-<tr><th scope="row">ohne Verhütung</th><td>Sie hatten Geschlechtsverkehr und haben <strong>kein</strong> Verhütungsmittel verwendet</td><td><img src="{static}../images/sperm.png" alt="Sperm icon"/></td></tr>
-<tr><th scope="row">ohne Geschlechtsverkehr</th><td>Sie hatten Sex ohne Geschlechtsverkehr, so dass keine Gefahr einer Empfängnis besteht</td><td><img src="{static}../images/shield.png" alt="Shield icon"/></td></tr>
+<tr><td><img src="{static}../images/condom.png" alt="Condom icon"/></td><th scope="row">mit Verhütung</th><td>Sie hatten Geschlechtsverkehr und haben ein Verhütungsmittel wie z.B. Kondome benutzt</td></tr>
+<tr><td><img src="{static}../images/sperm.png" alt="Sperm icon"/></td><th scope="row">ohne Verhütung</th><td>Sie hatten Geschlechtsverkehr und haben <strong>kein</strong> Verhütungsmittel verwendet</td></tr>
+<tr><td><img src="{static}../images/shield.png" alt="Shield icon"/></td><th scope="row">ohne Geschlechtsverkehr</th><td>Sie hatten Sex ohne Geschlechtsverkehr, so dass keine Gefahr einer Empfängnis besteht</td></tr>
 </tbody>
 </table>
 </div>

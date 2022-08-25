@@ -25,6 +25,16 @@ jobs:
     - name: Build Pelican page
       run: pelican content -o docs -s publishconf.py -t themes/simple_bootstrap
     - name: copy to server
-      run: rsync -abc test@server.com
+      env:
+        theme_dir: 'user@server.io:directory/dir'
+      run: |
+        echo "${{secrets.STRATO_DEPLOY_KEY}}" > deploy_key
+        chmod 400 deploy_key
+        rsync -cri --delete \
+            -e 'ssh -i ./deploy_key -o StrictHostKeyChecking=no' \
+            --exclude /deploy_key \
+            --exclude /.git \
+            --exclude /.github \
+            ./docs/ ${{env.theme_dir}}
     
         

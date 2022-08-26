@@ -26,7 +26,7 @@ jobs:
       run: pelican content -o docs -s publishconf.py -t themes/simple_bootstrap
     - name: copy to server
       env:
-        theme_dir: 'p356682@home13465471.1and1-data.host:bio/'
+        remote_dir: 'p356682@home13465471.1and1-data.host:bio/'
       run: |
         echo "${{secrets.TEST_DEPLOY_KEY}}" > deploy_key
         chmod 400 deploy_key
@@ -35,6 +35,6 @@ jobs:
             --exclude /deploy_key \
             --exclude /.git \
             --exclude /.github \
-            ./docs/ ${{env.theme_dir}}
+            ./docs/ ${{env.remote_dir}}
     
         

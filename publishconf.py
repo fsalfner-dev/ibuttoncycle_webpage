@@ -7,7 +7,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = 'https://fs-berlin67.github.io/biolog-website'
+SITEURL = 'http://51198087.swh.strato-hosting.eu/ibuttoncycle'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = ''

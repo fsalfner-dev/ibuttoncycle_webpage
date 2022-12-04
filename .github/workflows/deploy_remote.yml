@@ -26,15 +26,14 @@ jobs:
       run: pelican content -o docs -s publishconf.py -t themes/simple_bootstrap
     - name: copy to server
       env:
-        remote_dir: 'p356682@home13465471.1and1-data.host:bio/'
+        remote_dir: '51198087.swh.strato-hosting.eu@ssh.strato.de:ibuttoncycle/'
       run: |
         echo "${{secrets.TEST_DEPLOY_KEY}}" > deploy_key
         chmod 400 deploy_key
-        rsync -cri --delete \
+        rsync -cri \
             -e 'ssh -i ./deploy_key -o StrictHostKeyChecking=no' \
             --exclude /deploy_key \
             --exclude /.git \
             --exclude /.github \
             ./docs/ ${{env.remote_dir}}
     
-        

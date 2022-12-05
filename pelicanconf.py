@@ -1,5 +1,5 @@
 AUTHOR = 'Felix Salfner'
-SITENAME = 'BioLog App'
+SITENAME = 'iButtonCycle App'
 SITEURL = ''
 
 PATH = 'content'

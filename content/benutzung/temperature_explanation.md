@@ -1,6 +1,6 @@
 Title: Basaltemperatur
 Date: 2022-08-01
-Summary: Wie in BioLog Basaltemperaturen gehandhabt werden
+Summary: Wie in iButtonCycle Basaltemperaturen gehandhabt werden
 
 {% import 'macros.html' as macros %}
 ## Einführung zu Basaltemperaturen ## {: #methoden_uebersicht }
@@ -10,7 +10,7 @@ Bei der NFP Methode beruht die Bestimmung der unfruchtbaren Tage auf der Erkennu
 1. Temperaturmessung einmal pro Tag zu einer festgelegten Uhrzeit (z.B. jeden Morgen um 8 Uhr)
 1. Temperaturmessung mehrmals pro Nacht und Auswahl der niedrigsten Temperaturen (unabhängig von der Uhrzeit)
 
-Die zweite Methode benötigt ein automatisches Thermometer wie z.B. einen iButton, das die Temperatur automatisch misst und speichert. BioLog unterstützt beide Methoden. 
+Die zweite Methode benötigt ein automatisches Thermometer wie z.B. einen iButton, das die Temperatur automatisch misst und speichert. iButtonCycle unterstützt beide Methoden. 
 
 #### Bestimmung der Basaltemperatur auf Basis von mehreren Messungen pro Nacht (2. Methode) #### {: #methode_2_einfuehrung }
 
@@ -22,11 +22,11 @@ Das Bild zeigt eine Temperaturmessung alle 30 Minuten zwischen 2 Uhr und 4 Uhr m
 
 Der Zeitpunkt der Basaltemperaturmessung wird durch den ersten der drei niedrigsten Messwerte festgelegt, dargestellt durch die senkrechte gestrichelte blaue Linie. Der Zeitpunkt ist allerdings nur zur groben Überprüfung wichtig und hat keine Auswirkung auf die Erkennung des Temperaturanstiegs.
 
-Die Auswahl der drei tiefsten Messwerte erfolgt ebenfalls in BioLog und ist [weiter unten beschrieben](#basaltemp_eintragen).
+Die Auswahl der drei tiefsten Messwerte erfolgt ebenfalls in iButtonCycle und ist [weiter unten beschrieben](#basaltemp_eintragen).
 
-#### Wann erkennt BioLog einen Anstieg der Basaltemperatur?
+#### Wann erkennt iButtonCycle einen Anstieg der Basaltemperatur?
 
-BioLog erkennt einen verlässlichen Anstieg der Basaltemperatur mit Hilfe eines Algorithmus, der in mehr Details [hier](https://www.mynfp.de/temperatur-auswerten) erklärt wird. Im wesentlichen basiert der Algorithmus auf folgender Logik:
+iButtonCycle erkennt einen verlässlichen Anstieg der Basaltemperatur mit Hilfe eines Algorithmus, der in mehr Details [hier](https://www.mynfp.de/temperatur-auswerten) erklärt wird. Im wesentlichen basiert der Algorithmus auf folgender Logik:
 
 Ein verlässlicher Temperaturanstieg wird erkannt, wenn
 
@@ -34,7 +34,7 @@ Ein verlässlicher Temperaturanstieg wird erkannt, wenn
 1. ist die Temperatur des dritten höheren Tages zwar höher, aber nicht 0.2°C, dann wird ein Temperaturanstieg erkannt, wenn ein vierter Tag ebenfalls höher als die sechs vorherigen ist
 1. Fällt die Temperatur des 2. oder 3. höheren Tage wieder auf den Wert der vorherigen sechs Tage, wird ein Temperaturanstieg erkannt, falls ein vierter Tag mit mindestens 0.2°C höherer Termperatur vorliegt.
 
-## Darstellung der Temperaturkurve in BioLog
+## Darstellung der Temperaturkurve in iButtonCycle
 
 Jeder Zyklustag hat eine Basaltemperatur (zur Bestimmung siehe oben). Ab einem erkannten Temperaturanstieg werden die Zyklustage grün dargstellt, so dass sich folgende Farbgebung ergibt:
 
@@ -50,7 +50,7 @@ Jeder Zyklustag hat eine Basaltemperatur (zur Bestimmung siehe oben). Ab einem e
 <li>Der Zustand des Gebärmutterhalses</li>
 </ul>
 <strong>Die unfruchtbare Phase kann dadurch eventuell erst später beginnen, obwohl die Tage schon grün markiert sind!</strong>
-<p>BioLog unterstützt als zweite Methode (noch) ausschließlich die Beschaffenheit des Gebärmutterschleims.</p>")}}
+<p>iButtonCycle unterstützt als zweite Methode (noch) ausschließlich die Beschaffenheit des Gebärmutterschleims.</p>")}}
 
 #### Überspringen von Messwerten
 
@@ -62,16 +62,16 @@ Die Basaltemperatur ist ein wichtiger Bestandteil der symptothermalen Methode. D
 * Heiße Außentemperaturen
 * ...
 
-In BioLog können Temperaturmesswerte übersprungen werden, das heißt, sie werden vom Algorithmus zur Erkennung des Temperaturanstiegs ausgenommen. Um einen Messwert zu überspringen, setzen Sie den entsprechenden Tag als "Messwert ignorieren", wie im nächsten Screenshot dargestellt:
+In iButtonCycle können Temperaturmesswerte übersprungen werden, das heißt, sie werden vom Algorithmus zur Erkennung des Temperaturanstiegs ausgenommen. Um einen Messwert zu überspringen, setzen Sie den entsprechenden Tag als "Messwert ignorieren", wie im nächsten Screenshot dargestellt:
 
 {{ macros.device_image("{static}../images/screenshot_ignore_temperature.png", "Screenshot zum ignorieren von Messwerten") }}
 
 Temperaturmesswerte, die für die Auswertung des Temperaturanstiegs ignoriert werden, werden durch einen ausgegrauten Punkt dargestellt.
 
 
-## Eintragen von Basaltemperaturen in BioLog ## {: #basaltemp_eintragen }
+## Eintragen von Basaltemperaturen in iButtonCycle ## {: #basaltemp_eintragen }
 
-BioLog erlaubt das Eintragen von Basaltemperaturen auf drei verschiedene Weisen:
+iButtonCycle erlaubt das Eintragen von Basaltemperaturen auf drei verschiedene Weisen:
 
 1. Manuelles Eintragen einer Basaltemperatur bei nur einer Messung pro Zyklustag ([Methode 1](#methoden_uebersicht))
 1. Eintragen einer gemessenen Basaltemperatur pro Zyklustag ([Methode 1](#methoden_uebersicht)) bei Verwendung eines automatisierten Thermometers wie dem iButton, das einmal pro Nacht misst
@@ -97,13 +97,13 @@ Diese Schritte sind in den folgenden Screenshots dargestellt:
 
 #### Eintragen von Temperaturen eines automatisierten Thermometers {: #automatisiert }
 
-Die Auswertung der Daten eines automatisierten Thermometers unterscheidet sich, je nachdem ob Sie die BioLog App mit einem Server verbunden haben (siehe [einen eigenen Server aufsetzen]({filename}../einrichtung/server-aufsetzen.md)) oder nicht.
+Die Auswertung der Daten eines automatisierten Thermometers unterscheidet sich, je nachdem ob Sie die iButtonCycle App mit einem Server verbunden haben (siehe [einen eigenen Server aufsetzen]({filename}../einrichtung/server-aufsetzen.md)) oder nicht.
 
 ##### Laden der Temperaturmesswerte
 
 Wenn die App nicht mit einem Server verbunden ist, müssen Sie zunächst das automatisierte Thermometer auslesen. Gehen Sie dann wie folgt vor:
 
-1. *Nicht in der BioLog App:* Lesen Sie Ihr Thermometer aus und legen Sie die CSV Datei auf Ihrem Smartphone ab
+1. *Nicht in der iButtonCycle App:* Lesen Sie Ihr Thermometer aus und legen Sie die CSV Datei auf Ihrem Smartphone ab
 1. Wählen Sie am unteren Bildschirmrand das Symbol "Daten"
 1. Wählen Sie "CSV Datei auswählen" 
 1. Wählen Sie eine CSV Datei aus, die die einzelenen Messungen (z.B. von einem iButton) enthält. 

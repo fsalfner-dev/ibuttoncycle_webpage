@@ -1,6 +1,6 @@
 Title: Einen eigenen Server aufsetzen
 Date: 2022-07-24
-Summary: Detaillierte Anleitung zur Einrichtung eines BioLog Servers
+Summary: Detaillierte Anleitung zur Einrichtung eines iButtonCycle Servers
 
 {% import 'macros.html' as macros %}
 

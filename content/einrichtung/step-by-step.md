@@ -6,7 +6,7 @@ Summary: Einfache Schritt-für-Schritt Anleitung zur Einrichtung der App
 {% import 'macros.html' as macros %}
 # Eine einfache Schritt-für-Schritt Anleitung zur Einrichtung der App in vier Schritten
 
-Die BioLog App dient der Aufzeichnung von der Basalthemperatur, der Zervixschleimkonsistenz und vieler anderer Werte und Symptome zur Unterstützung bei der [natürlichen Familienplanung (NFP)](https://www.familienplanung.de/verhuetung/verhuetungsmethoden/natuerliche-methoden-der-familienplanung-nfp/) 
+Die iButtonCycle App dient der Aufzeichnung von der Basalthemperatur, der Zervixschleimkonsistenz und vieler anderer Werte und Symptome zur Unterstützung bei der [natürlichen Familienplanung (NFP)](https://www.familienplanung.de/verhuetung/verhuetungsmethoden/natuerliche-methoden-der-familienplanung-nfp/) 
 Die App unterstützt die symptomatische Temperaturmethode.
 
 ## 1: Installation der App
@@ -32,7 +32,7 @@ Wählen Sie die Option **Speicherung auf dem Telefon** und tippen Sie auf **Los 
 
 ## 3: Setzen des Datums der ersten Periode
 
-In der BioLog App sind alle Daten in einer Reihe aufgelistet, die vom heutigen Datum Zyklus für Zyklus in die Vergangenheit gehen. Der Anfang der Liste ist der erste Tag der Periode des ersten in der App erfassten Zyklus. Dieses Datum muss in diesem Schritt ausgewählt werden.
+In der iButtonCycle App sind alle Daten in einer Reihe aufgelistet, die vom heutigen Datum Zyklus für Zyklus in die Vergangenheit gehen. Der Anfang der Liste ist der erste Tag der Periode des ersten in der App erfassten Zyklus. Dieses Datum muss in diesem Schritt ausgewählt werden.
 
 {{ macros.device_image("{static}../images/screenshot_setup_3.png", "Screenshot zu Setup: Information zur Datumsauswahl") }}
 
@@ -41,19 +41,19 @@ In der BioLog App sind alle Daten in einer Reihe aufgelistet, die vom heutigen D
 Wählen Sie das Datum der ersten in der App erfassten Periode nach folgenden Kriterien aus:
 
 * Sie kennen das Datum des ersten Tags der Periode für **alle Zyklen** seit der ausgewählten ersten Periode bis heute. Dies ist für die Vorhersage des nächsten Periodenbeginns nötig, die auf der Länge Ihrer bisherigen Zyklen beruht. Sie benötigen diese Daten in Schritt 4.
-* Sie können später **keine Eintragungen vor dem ausgewählten Datum** machen. Das ausgewählte Datum ist quasi der "Beginn der BioLog Zeitrechnung".
+* Sie können später **keine Eintragungen vor dem ausgewählten Datum** machen. Das ausgewählte Datum ist quasi der "Beginn der iButtonCycle Zeitrechnung".
 
 **Auswahl des Datums**
 
 * Tippen Sie auf *Datum auswählen* 
-* Im darauffolgenden Dialog wählen Sie das eben ausgewählte Datum als "Beginn der BioLog Zeitrechnung".
+* Im darauffolgenden Dialog wählen Sie das eben ausgewählte Datum als "Beginn der iButtonCycle Zeitrechnung".
 * Tippen Sie auf **OK** 
 
 {{ macros.device_image("{static}../images/screenshot_setup_datumswahl.png", "Screenshot zu Setup: Auswahl des Datums der ersten Periode", padding=4) }}
 
 ## 4: Eintragung der weiteren Perioden
 
-Die Vorhersage des Beginns der nächsten Periode basiert auf der Dauer früherer Perioden. Daher muss zumindest der Beginn jeder Periode seit dem unter 3 ausgewählten ersten Periodenstart eingetragen werden, da BioLog davon ausgeht, es gäbe nur einen einzigen Zyklus, der am ausgewählten Datum beginnt und bis heute dauert. Die folgenden Screenshots erklären das Vorgehen für einen Zyklusbeginn, er muss aber für alle Zyklen bis heute durchgeführt werden.
+Die Vorhersage des Beginns der nächsten Periode basiert auf der Dauer früherer Perioden. Daher muss zumindest der Beginn jeder Periode seit dem unter 3 ausgewählten ersten Periodenstart eingetragen werden, da iButtonCycle davon ausgeht, es gäbe nur einen einzigen Zyklus, der am ausgewählten Datum beginnt und bis heute dauert. Die folgenden Screenshots erklären das Vorgehen für einen Zyklusbeginn, er muss aber für alle Zyklen bis heute durchgeführt werden.
 
 #### 4.1: Ausgangssituation
 
@@ -89,6 +89,6 @@ Nach Abschluss aller Eintragungen sehen Sie am oberen Bildschirmrand eine Vorher
 
 ## Fertig!
 
-Die BioLog App ist nun einsatzbereit! Für weitere Details, lesen Sie z.B.
+Die iButtonCycle App ist nun einsatzbereit! Für weitere Details, lesen Sie z.B.
 
 * die [Dokumentation aller erfassbaren Symptome]({filename}../benutzung/nfp_detail_screen_explanation.md)

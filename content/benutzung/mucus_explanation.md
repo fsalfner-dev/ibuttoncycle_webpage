@@ -1,11 +1,11 @@
 Title: Beschaffenheit des Gebärmutterschleims
 Date: 2022-08-02
-Summary: Wie in BioLog die Beschaffenheit des Gebärmutterschleims verwendet wird.
+Summary: Wie in iButtonCycle die Beschaffenheit des Gebärmutterschleims verwendet wird.
 
 {% import 'macros.html' as macros %}
-# Einführung zur Beschaffenheit des Gebärmutterschleims in BioLog
+# Einführung zur Beschaffenheit des Gebärmutterschleims in iButtonCycle
 
-Die symptothermale Methode beruht auf der Erkennung eines Temperaturanstiegs zusammen mit der Beobachtung eines weiteren Symptoms, nämlich entweder der Beschaffenheit des Gebärmutterschleims oder des Zustands des Gebärmutterhalses. BioLog unterstützt die Aufzeichnung der Gebärmutterschleimbeschaffenheit. 
+Die symptothermale Methode beruht auf der Erkennung eines Temperaturanstiegs zusammen mit der Beobachtung eines weiteren Symptoms, nämlich entweder der Beschaffenheit des Gebärmutterschleims oder des Zustands des Gebärmutterhalses. iButtonCycle unterstützt die Aufzeichnung der Gebärmutterschleimbeschaffenheit. 
 Eine gute Erklärung zur Bestimmung der Beschaffenheit des Gebärmutterschleims findet sich bei [myNFP](https://www.mynfp.de/zervixschleim-beobachten).
 
 Es werden die folgenden vier Beschaffenheiten unterschieden: `t`, `-`, `f`, `S`, `S+`
@@ -58,9 +58,9 @@ Zur Bestimmung der Beschaffenheit müssen Empfinden und Aussehen bewertet werden
 </table>
 </div>
 
-### Notieren der Gebärmutterschleimbeschaffenheit in BioLog
+### Notieren der Gebärmutterschleimbeschaffenheit in iButtonCycle
 
-Um die Beschaffenheit des Gebärmutterschleims in BioLog aufzuzeichnen, führen Sie die folgenden Schritte aus:
+Um die Beschaffenheit des Gebärmutterschleims in iButtonCycle aufzuzeichnen, führen Sie die folgenden Schritte aus:
 
 1. Tippen Sie in der Hauptansicht auf den Tag für den Sie Beschaffenheit notieren wollen
 1. Tippen Sie auf den kleinen Pfeil im Abschnitt **Fruchtbarkeit**

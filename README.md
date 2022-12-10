@@ -20,9 +20,11 @@ Dieses Repository dient der Verwaltung der Webseiten unter https://ibuttoncycle.
 
 ### Editieren von Inhalten
 
-* `pelican content --listen --autoreload -o docs -s pelicanconf.py -t themes/simple_bootstrap`
+* Branch erzeugen und auschecken
+*  `pelican content --listen --autoreload -o docs -s pelicanconf.py -t themes/simple_bootstrap`
 * Editieren von Dateien
 * Vorschau unter [127.0.0.1:8000](http://127.0.0.1:8000)
+* Commit der Änderungen auf neuem Branch
 
 ### Veröffentlichung der Webseiten auf ibuttoncycle.myibutton.eu
 

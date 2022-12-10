@@ -29,7 +29,6 @@ jobs:
         remote_dir: '51198087.swh.strato-hosting.eu@ssh.strato.de:ibuttoncycle/'
       run: |
         echo "${{secrets.IBUTTONCYCLE_PRIV_KEY}}" > deploy_key
-        cat deploy_key
         chmod 400 deploy_key
         rsync -cri --delete \
             -e 'ssh -i ./deploy_key -o StrictHostKeyChecking=no' \

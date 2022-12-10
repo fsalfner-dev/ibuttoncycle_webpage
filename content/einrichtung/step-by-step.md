@@ -89,6 +89,6 @@ Nach Abschluss aller Eintragungen siehst Du am oberen Bildschirmrand eine Vorher
 
 ## Fertig!
 
-Die iButtonCycle App ist nun einsatzbereit! Für weitere Details, lies z.B.
+Die iButtonCycle App ist nun einsatzbereit! 
 
-* die [Dokumentation aller erfassbaren Symptome]({filename}../benutzung/nfp_detail_screen_explanation.md)
+{{ macros.info("Eine Dokumentation aller efassbaren Symptome findest Du <a href=\"{filename}../benutzung/nfp_detail_screen_explanation.md\">hier</a>") }}

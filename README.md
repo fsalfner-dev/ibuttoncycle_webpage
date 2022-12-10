@@ -30,3 +30,4 @@ Dieses Repository dient der Verwaltung der Webseiten unter https://ibuttoncycle.
 * Pull request auf GitHub erzeugen
 * Pull request reviewen und approven
 * Merge nach Main
+* Prüfen auf https://ibuttoncycle.myibutton.eu

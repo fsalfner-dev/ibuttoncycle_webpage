@@ -1,5 +1,5 @@
 Title: Beschaffenheit des Gebärmutterschleims
-Date: 2022-08-02
+Date: 2022-12-10
 Summary: Wie in iButtonCycle die Beschaffenheit des Gebärmutterschleims verwendet wird.
 
 {% import 'macros.html' as macros %}
@@ -60,13 +60,13 @@ Zur Bestimmung der Beschaffenheit müssen Empfinden und Aussehen bewertet werden
 
 ### Notieren der Gebärmutterschleimbeschaffenheit in iButtonCycle
 
-Um die Beschaffenheit des Gebärmutterschleims in iButtonCycle aufzuzeichnen, führen Sie die folgenden Schritte aus:
+Um die Beschaffenheit des Gebärmutterschleims in iButtonCycle aufzuzeichnen, führe die folgenden Schritte aus:
 
-1. Tippen Sie in der Hauptansicht auf den Tag für den Sie Beschaffenheit notieren wollen
-1. Tippen Sie auf den kleinen Pfeil im Abschnitt **Fruchtbarkeit**
-1. Tippen auf die blaue Schrift in der Zeile **Zervixschleim** 
-1. Wählen Sie darauf die passende Beschaffenheit
-1. Tippen Sie auf **Speichern** am oberen Bildschirmrand
+1. Tippe in der Hauptansicht auf den Tag für den Du die Beschaffenheit notieren willst
+1. Tippe auf den kleinen Pfeil im Abschnitt **Fruchtbarkeit**
+1. Tippe die blaue Schrift in der Zeile **Zervixschleim** 
+1. Wähle darauf die passende Beschaffenheit
+1. Tippe auf **Speichern** am oberen Bildschirmrand
 
 Die folgenden Screenshots zeigen den Vorgang:
 
@@ -76,7 +76,7 @@ Die folgenden Screenshots zeigen den Vorgang:
 
 ### Auswertung der Gebärmutterschleimbeschaffenheit zur Bestimmung der unfruchtbaren Tage
 
-Die Gebärmutterschleimbeschaffenheit gibt (zusammen mit der Basalthemperatur) Auskunft darüber, wann die unfruchtbaren Tage beginnen. Eine ausführliche Beschreibung finden Sie auf den Seiten von [myNFP](https://www.mynfp.de/temperatur-und-zervixschleim-kombinieren).
+Die Gebärmutterschleimbeschaffenheit gibt (zusammen mit der Basalthemperatur) Auskunft darüber, wann die unfruchtbaren Tage beginnen. Eine ausführliche Beschreibung findest Du auf den Seiten von [myNFP](https://www.mynfp.de/temperatur-und-zervixschleim-kombinieren).
 
 Der folgende Screenshot zeigt einen beispielhaften Verlauf:
 

@@ -91,4 +91,6 @@ Nach Abschluss aller Eintragungen siehst Du am oberen Bildschirmrand eine Vorher
 
 Die iButtonCycle App ist nun einsatzbereit! 
 
+{{ macros.info("Solltest Du einen iButton zur Temperaturmessung verwenden, <a href=\"{filename}csv_freischalten.md\">richte als nächstes die Importfunktion ein</a>") }}
+
 {{ macros.info("Eine Dokumentation aller efassbaren Symptome findest Du <a href=\"{filename}../benutzung/nfp_detail_screen_explanation.md\">hier</a>") }}

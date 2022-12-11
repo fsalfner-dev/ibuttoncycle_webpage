@@ -1,6 +1,6 @@
 Title: Die NFP Übersichtsseite
 Date: 2022-12-10
-star_prio: 2
+star_prio: 1
 Summary: Die Dokumentation zur Hauptansicht der iButtonCycle App
 
 {% import 'macros.html' as macros %}

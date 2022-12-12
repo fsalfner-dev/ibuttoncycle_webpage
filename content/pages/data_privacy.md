@@ -49,7 +49,7 @@ Deutschland
 
 Tel.: +49-89-95894327  
 E-Mail: [nfp@myiButton.eu](mailto:nfp@myiButton.eu)  
-Website: [www.myibutton.eu/](www.myibutton.eu/)
+Website: [www.myibutton.eu/](https://www.myibutton.eu/)
 
 ##### 3. Erfassung von allgemeinen Daten und Informationen
 Die Internetseite erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können 

@@ -21,7 +21,7 @@ Jeder Artikel besteht aus einer Datei mit der Endung `.md`.
 
 Beim Erzeugen der statischen HTML Seiten wird für jede Datei, die in den oben aufgelisteten Verzeichnissen ist, automatisch eine Seite erzeugt.
 
-Es gibt zwei **Übersichtsseiten**: [ibuttoncycle.org/einrichtung/](https://ibuttoncycle.org/einrichtung), und [ibuttoncycle.org/benutzung/](https://ibuttoncycle.org/benutzung). Diese Seiten werden **automatisch aktualisiert**: Neue Artikel erscheinen automatisch.
+Es gibt zwei **Übersichtsseiten**: [ibuttoncycle.org/category/einrichtung.html](https://ibuttoncycle.org/category/einrichtung.html), und [ibuttoncycle.org/category/benutzung.html](https://ibuttoncycle.org/category/benutzung.html). Diese Seiten werden **automatisch aktualisiert**: Neue Artikel erscheinen automatisch.
 
 Jeder Artikel-Markdown-Datei besteht aus 
 
@@ -81,4 +81,4 @@ Daher sollte für größere Änderungen die folgende Variante mit Änderungen au
 * Speichern der Datei aktualisiert die Vorschau
 * In der Vorschau unter [127.0.0.1:8000](http://127.0.0.1:8000) prüfen, ob die Seite veröffentlicht werden kann
 * Commit der Änderungen: `git add .` und `git push`
-* Nach ca 2 Min. die Änderungen auf [https://ibuttoncycle.myibutton.eu](https://ibuttoncycle.myibutton.eu) überprüfen
+* Nach ca 2 Min. die Änderungen auf [https://ibuttoncycle.org](https://ibuttoncycle.org) überprüfen

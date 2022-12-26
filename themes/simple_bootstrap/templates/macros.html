@@ -2,14 +2,14 @@
     <div class="card shadow-sm">
       <div class="card-body article-card-header h-25" ><h5 class="text-truncate">{{ article.title }}</h5></div>
       <div class="card-body">
-        <div class="row align-items-start"  style="height:5em;">
+        <div class="row align-items-start overflow-hidden mb-3"  style="line-height:1.5em;height:4.5em;">
           {{ article.summary }}
         </div>
         <div class="row justify-content-between align-items-center">
-          <div class="col"><a href="{{url}}" class="btn btn-sm btn-outline-secondary">Weiterlesen ...</a></div>
-          <div class="col text-end small fst-italic">
+          <div class="col-8"><a href="{{url}}" class="btn btn-sm btn-outline-secondary">Weiterlesen ...</a></div>
+          <div class="col-4 text-end small fw-lighter fst-italic" style="font-size:x-small">
             {% if show_date %}
-            {{ article.date | strftime('%d.%m.%Y') }}
+            {{ article.date | strftime('%d.%m.%y') }}
             {% endif %}
           </div>
         </div>

@@ -22,6 +22,12 @@ Auch Du kannst durch Deine Initiative und Rückmeldung per email an [NfP@myiButt
 
 Eine Arbeitsgruppe NFP, eine Abteilung der MW Malteser Werke gGmbH, Erna-Scheffler-Str. 2, 51103 Köln ist von diesen Projekten vollständig eigenständig rechtlich und wirtschaftlich getrennt. 
 
+Die iButtonCycle App wird von folgenden Personen entwickelt:
+
+* Felix Salfner
+* Rolf Klemm
+
+
 #### Streitschlichtung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: [https://ec.europa.eu/consumers/odr](https://ec.europa.eu/consumers/odr).
 Unsere E-Mail-Adresse finden Sie oben im Impressum.

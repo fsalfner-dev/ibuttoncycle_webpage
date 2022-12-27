@@ -23,12 +23,14 @@ Du wirst zunächst gefragt, wo die Daten gespeichert werden sollen.
 Die beiden Optionen bedeuten folgendes:
 
 * **Speicherung auf dem Telefon:**   
-    Bei Auswahl dieser Option funktioniert die App eigenständig, alle Daten werden auf dem Telefon gespeichert. Dies ist die einfachste Option, Du musst nichts weiter tun, kannst allerdings auch ausschließlich alleine auf Deine Daten zugreifen und Deine Daten gehen verloren, wenn Du z.B. Dein Telefon verlierst.
+    Bei Auswahl dieser Option funktioniert die App eigenständig, alle Daten werden auf dem Telefon gespeichert. Dies ist die einfachste Option, Du musst nichts weiter tun, kannst allerdings auch ausschließlich von diesem Gerät aus auf Deine Daten zugreifen. Backups müssen selbst angelegt werden.
 
 * **Speicherung auf einem Server**
-    Bei Auswahl dieser Option verbindet sich die App mit einem Server, den Du selbst installieren und betreiben musst. Das Aufsetzen und der Betrieb des Servers benötigt fundierte IT Kenntnisse, bietet aber auch mehr Flexibilität, zusätzliche Datenauswertungen im Browser und mehr Möglichkeiten zur Datensicherung. Für weitere Informationen lies [diese Anleitung]({filename}server-aufsetzen.md)   
+    Bei Auswahl dieser Option verbindet sich die App mit einem Server, den Du selbst installieren und betreiben musst. Das Aufsetzen und der Betrieb des Servers benötigt fundierte IT Kenntnisse, bietet aber auch mehr Flexibilität, zusätzliche Datenauswertungen im Browser und mehr Möglichkeiten zur Datensicherung. 
 
-Wähle die Option **Speicherung auf dem Telefon** und tippe auf **Los geht's**.
+Eine **Entscheidungshilfe** zwischen den beiden Optionen findest Du [hier]({filename}storage_auswaehlen.md).   
+
+Wenn Du die Option **Speicherung auf dem Telefon** auswählst, tippe einfach auf **Los geht's**. Für die Option *Speicherung auf einem Server* benötigst Du ein Token des Servers, den Du zunächst [aufgesetzt]({filename}server-aufsetzen.md) haben musst.
 
 ## 3: Setzen des Datums der ersten Periode
 

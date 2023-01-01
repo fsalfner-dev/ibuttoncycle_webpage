@@ -47,6 +47,8 @@ Soll auf Inhalt aus anderen Dateien verwiesen werden (z.B. bei Einfügen eines B
 
 Sofern die Seite noch nicht fertig ist, bitte oben auf der Seite das Macro `{{macros.info("Diese Seite ist noch unvollständig")}}` einfügen.
 
+Soll auf einen bestimmten Abschnitt verwiesen werden, muss am Sprungziel ein *Anker* definiert werden. Dies geht mit folgender Syntax `## Überschrift ## {: #sprungmarke}`. Danach kann mit `[Link Text](#sprungmarke)` ein Link zum Sprungziel erzeugt werden.
+
 
 ## Editieren von Inhalt im Browser über GitHub
 

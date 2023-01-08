@@ -6,6 +6,9 @@ Summary: Das Programm iButtonReader am PC einrichten.
 
 {{macros.info("Diese Seite ist noch unvollständig")}}
 
+## iButtonReader installieren
+
+Lade Dir den [iButtonReader]({static}/download/iButtonReader.zip) herunter.
 
 ## Automatisches Auslesen unter Linux einrichten
 

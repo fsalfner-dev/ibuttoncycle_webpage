@@ -3,10 +3,12 @@ SITENAME = 'iButtonCycle App'
 SITEURL = ''
 
 PATH = 'content'
+STATIC_PATHS = ['images', 'download']
 
 TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = 'de'
+
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

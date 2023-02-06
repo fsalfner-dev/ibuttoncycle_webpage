@@ -17,3 +17,6 @@ Anstatt die Daten auf dem Telefon zu speichern, kann die iButtonCycle App die Da
 * Download: noch nicht verfügbar
 * Anleitung: [Eigenen Server aufsetzen]({filename}../einrichtung/server-aufsetzen.md)
 
+## AiBa Software zur grafischen Auswertung von Temperaturmessungen des iButtons
+
+* Download: [AiBa Software](https://myibutton.eu/wp-content/uploads/2021/03/iButton-apP.zip)

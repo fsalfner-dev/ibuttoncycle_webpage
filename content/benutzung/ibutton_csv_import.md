@@ -198,3 +198,5 @@ Sollten für einen Tag Messungen angezeigt werden, Du aber keinen Wert für dies
     * Tippe auf die blaue Schrift "editieren" am rechten oberen Rand der Karte
     * Wähle "Eintrag löschen" im Dialog aus
     * Drücke auf "Speichern" um die Detailansicht zu verlassen
+
+{{macros.device_image("{static}../images/screenshot_delete_temperature.png","Screenshot mit Dialog zum Löschen eines Temperatureintrags")}}

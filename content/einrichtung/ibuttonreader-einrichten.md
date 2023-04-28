@@ -4,8 +4,6 @@ Summary: Das Programm iButtonReader am PC einrichten.
 
 {% import 'macros.html' as macros %}
 
-{{macros.info("Diese Seite ist noch unvollständig")}}
-
 ## iButtonReader installieren
 
 Achtung: Stecke den iButton noch nicht in den Rechner ein. Zunächst müssen die Treiber installiert werden.
@@ -20,13 +18,23 @@ Falls Du einen Cloudspeicher nutzt, um die CSV Datei mit dem Smartphone zu synch
 
 #### Einrichten der 1-wire Treiber unter Windows
 
-* TBD
+* Stecke den USB Reader **noch nicht** in den Rechner
+* Installiere Java auf Deinem Rechner, z.B. von [Adoptium](https://adoptium.net/)
+* Lade die [1-wire Treiber von Analog Devices](https://www.analog.com/en/design-center/evaluation-hardware-and-software/1-wire-sdks/download-1wire-ibutton-drivers.html) herunter.
+* Installiere die 1-wire Treiber
+* Stecke den USB Reader in den Rechner und warte, bis die automatische Treiberinstallation abgeschlossen ist
+* Teste die Installation durch Öffnen des Programms `OneWireViewer`
+
+Eine ausführliche Anleitung ist auf den (Seiten von Analog Devices)[https://www.analog.com/en/technical-articles/onewireviewer-and-ibutton-quick-start-guide.html] verfügbar.
 
 #### Einrichten der 1-wire Treiber unter Linux
 
-* Install libusb, e.g. `apt install libusb` bzw. `dnf install libusb` 
-* Verhindern, dass das Standard Kernel-Modul ds2490 geladen wird: Editiere/erstelle die Datei `/etc/modprobe.d/ibutton-blacklist.conf`
-* Setzen der richtigen UDEV Berechtigungen: Erstelle eine Datei `/etc/udev/rules.d/99-one-wire.rules` mit dem Inhalt `ATTRS{idVendor}=="04fa", ATTRS{idProduct}=="2490", GROUP="plugdev", MODE="0664"`
+* Installiere libusb, z.B. unter Debian / Ubuntu mit `apt install libusb` bzw. `dnf install libusb` 
+* Java muss auf dem System installiert sein
+* Der USB Reader funktioniert nicht, wenn das `ds2490` Kernel Modul aktiv ist. Um zu verhindern, dass das Modul geladen wird, muss die Zeile `blacklist ds2490` in einer Blacklist Datei hinzugefügt werden. Je nach Linux Distribution kann z.B. die Datei `/etc/modprobe.d/ibutton-blacklist.conf` angelegt werden, die die Blacklist-Zeile enthält
+* Um den Reader mit den richtigen Berechtigungen auszustatten, erstelle eine Datei `/etc/udev/rules.d/99-one-wire.rules` mit dem Inhalt `ATTRS{idVendor}=="04fa", ATTRS{idProduct}=="2490", GROUP="plugdev", MODE="0664"`.
+
+Eine ausführliche Anleitung ist bei [Analog Devices zu finden](https://www.analog.com/media/en/technical-documentation/user-guides/instructions-for-compiling-the-onewireviewer-for-linux.pdf)
 
 #### Ausführen der iButtonReader Software
 
@@ -36,9 +44,37 @@ Falls Du einen Cloudspeicher nutzt, um die CSV Datei mit dem Smartphone zu synch
 * Führe die Datei `run.bat` bzw. `sudo run.sh` aus.
 * Die ausgelesenen Temperaturdaten des iButtons findest Du in einer CSV Datei im Ordner, der in der Datei `ibuttonreader.properties` angegeben wurde.
 
+Eine detaillierte Anleitung zur Anwendung findest Du [hier]({filename}../benutzung/ibutton_csv_import.md).
 
-## Automatisches Auslesen unter Linux einrichten
 
-Hierfür gibt es eine [separate Einleitung]({filename}automatisches_auslesen.md)
+## Automatisches Auslesen unter Linux einrichten ## {: #automatisch}
 
+Da `udev` keine längerlaufenden Prozesse direkt aufrufen kann, muss ein sogenannter Oneshot Service für Systemd eingerichtet werden, der dann beim Einstecken des USB Readers über eine `udev` Regel gestartet wird.
+
+#### Einrichten des systemd oneshot Service
+
+Lege im Verzeichnis `/etc/systemd/system/` eine Datei `ibuttonupload.service` an mit dem Inhalt
+```
+[Unit]
+Description=execute upload script when iButton is plugged in
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=<absolute/path/to/run.sh/directory/>
+ExecStart=<path/to/run.sh>
+```
+
+Mache `root` zum Eigentümer des `run.sh` Skripts durch den Aufruf `sudo chown root:root run.sh`
+
+Rufe `sudo systemctl daemon-reload` auf, um den neuen Service systemd bekannt zu machen.
+
+
+#### Einrichten einer UDEV Regel
+
+Um den oben angelegten `ibuttonupload.service` per `udev` aufzurufen, wenn der USB Reader in den Rechner eingesteckt wird, muss die oben schon angelegte Datei `/etc/udev/rules.d/99-one-wire.rules` erweitert werden.
+
+1. Modifiziere die entsprechende Zeile so, dass sie folgendermaßen lautet: `ACTION=="add", ATTRS{idVendor}=="04fa", ATTRS{idProduct}=="2490", GROUP="plugdev", MODE="0664", TAG+="systemd", ENV{SYSTEMD_WANTS}+="ibuttonupload"`
+1. Rufe `sudo udevadm control --reload` auf
+1. Rufe `sudo service udev restart` auf.
 

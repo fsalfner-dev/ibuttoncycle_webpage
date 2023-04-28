@@ -79,7 +79,7 @@ Der Bluetooth iButton befindet sich noch in der Testphase. Eine Anleitung zum Au
 
 Der USB iButton kann [ähnlich wie auf dem PC](#ibuttonreader) ebenfalls mit dem Programm `ibuttonreader` ausgelesen werden. Die CSV Datei muss dann vom Raspberry Pi aus zum Smartphone übertragen werden.
 
-Das manuelle Starten des `run.sh` Scripts kann unter Linux auch automatisiert werden, so dass der Auslesevorgang automatisch gestartet wird, sobald man das USB Lesegerät in den Raspberry Pi einsteckt. Eine [Anleitung zur Einrichtung der Automation]({filename}../einrichtung/automatisches_auslesen.md) wird in einer separaten Anleitung beschrieben.
+Das manuelle Starten des `run.sh` Scripts kann unter Linux auch automatisiert werden, so dass der Auslesevorgang automatisch gestartet wird, sobald man das USB Lesegerät in den Raspberry Pi einsteckt. Eine [Anleitung zur Einrichtung der Automation]({filename}../einrichtung/ibuttonreader-einrichten.md#automatisch) wird in einer separaten Anleitung beschrieben.
 
 Wenn man einen [einen eigenen Server betreibt]({filename}../einrichtung/server-aufsetzen.md), können die Messwerte auch direkt (also ohne den Umweg über eine CSV Datei) an den Server gesendet und in der iButtonCycle App ausgewertet werden.
 

@@ -1,3 +1,5 @@
 __pycache__/
 docs/
 docs/theme/.webassets-cache/*
+content/.DS_Store
+.DS_Store

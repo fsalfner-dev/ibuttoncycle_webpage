@@ -72,8 +72,8 @@ Daher sollte für größere Änderungen die folgende Variante mit Änderungen au
 
 * Ein virtual environment für Python einrichten: `python3 -m venv <name_of_venv>`
 * Das virtual environment aktivieren: `source <name_of_venv>/bin/activate`
-* Benötigte Pakete installieren: `python3 -m pip install -r requirements.txt`
 * Git repository klonen: `git clone git@github.com:fsalfner-dev/ibuttoncycle_website.git`
+* Benötigte Pakete installieren: `python3 -m pip install -r requirements.txt`
 
 #### Editieren von Inhalten
 

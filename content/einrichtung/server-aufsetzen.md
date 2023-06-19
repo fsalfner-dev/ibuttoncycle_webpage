@@ -4,8 +4,6 @@ Summary: Detaillierte Anleitung zur Einrichtung eines iButtonCycle Servers
 
 {% import 'macros.html' as macros %}
 
-{{macros.info("Diese Seite ist noch unvollständig")}}
-
 ## Voraussetzungen zum Aufsetzen eines eigenen Servers
 
 Die Hardware-Anforderungen an den iButtonCycle Server sind sehr gering - er lässt sich ohne Weiteres auf einem RaspberryPi 4 betreiben.
@@ -48,7 +46,7 @@ Falls Du Dich an dieser Stelle fragst, wie die App eigentlich "weiß", unter wel
 
 ## Einrichten des Servers
 
-Die Software für den iButtonCycle Server wird über Docker HUB zur Verfügung gestellt. Die [detaillierte Anleitung zur Einrichtung des Servers](https://hub.docker.com/r/fsalfnerdev/ibuttoncycle-api) etc. ist ebenfalls dort hinterlegt und leider nur auf Englisch verfügbar.
+Die Software für den iButtonCycle Server wird über Docker HUB zur Verfügung gestellt. Die [**detaillierte Anleitung zur Einrichtung des Servers**](https://hub.docker.com/r/fsalfnerdev/ibuttoncycle-api) etc. ist ebenfalls dort hinterlegt und leider nur auf Englisch verfügbar.
 
 Die Anleitung endet damit, dass man eine funktionierende Administrationsoberfläche unter der URL `https://ibuttoncycle.<your>.<domain>` aufrufen kann.
 
@@ -58,20 +56,22 @@ Der iButtonCycle Server ist **multi-Benutzerfähig**, kann also die Daten von me
 
 Beispielsweise können so Nutzerkonten für Mutter und Tochter einer Familie eingerichtet werden.
 
+{{ macros.info("Am Ende des Vorgangs muss ein Token (eine Art Passwort) auf das Smartphone übertragen werden. Am einfachsten geht das, wenn die folgenden Schritte mit dem <strong>Webbrowser</strong> auf dem <strong>Smartphone</strong> ausgeführt werden, auf dem auch die iButtonCycle App eingerichtet wird. So kann einfach die Funktion Kopieren und Einfügen genutzt werden.")}}
+
 Um einen Nutzer auf dem iButtonCycle Server einzurichten, sind folgende Schritte nötig:
 
-#### 1. Einloggen als Administrator
+#### Einloggen als Administrator
 
 Bei der Einrichtung des Servers musste in der `.env` Datei unter `IBUTTONCYCLE_ADMIN_PWD` ein Administrator-Passwort vergeben werden. Dieses Passwort wird benötigt, um sich als Administrator einzuloggen.
 
 * Rufe im Browser die URL `https://ibuttoncycle.<your>.<domain>` auf
-* Gib' das Administrator-Passwort im rechten Eingabefeld "Administrator Passwort" ein.
+* Gib das Administrator-Passwort im Eingabefeld "Administrator Passwort" ein.
 
-{{ macros.image("{static}/images/screenshot_admin_login.png", "Login Screen der Administrationsoberfläche", width=8) }}
+{{ macros.image("{static}/images/screenshot_admin_login.png", "Login Screen der Administrationsoberfläche") }}
 
-#### 2. Anlegen einer Nutzer:in
+#### Anlegen einer Nutzer:in
 
-Um datenschutzrechtliche Probleme zu vermeiden benötigt der iButtonCycle Server keinerlei Email-Adresse oder andere persönliche Daten. Zur Einrichtung eines Nutzers wird lediglich nach Vor- und Nachnamen gefragt. Der Namen dient lediglich der Personalisierung in der App und dem Web-Interface - es **können problemlos Pseudonyme verwendet werden**.
+Um datenschutzrechtliche Probleme zu vermeiden benötigt der iButtonCycle Server keinerlei Email-Adresse oder andere persönliche Daten. Dei Angabe des Vor- und Nachnamens dient lediglich der Personalisierung in der App und dem Web-Interface - es **können problemlos Pseudonyme verwendet werden**.
 
 Es wird **kein Passwort benötigt**, da die Authentifizierung über sogenannte JSON-Web-Tokens funktioniert (siehe nächster Abschnitt).
 
@@ -80,22 +80,42 @@ Zum Anlegen eines Nutzerkontos:
 * Vor- und Nachname in den entsprechenden Feldern eingeben, und den
 * "Nutzer anlegen" Button drücken
 
-{{ macros.image("{static}/images/screenshot_admin_create_user.png", "Neuen Nutzer Anlegen in der Administrationsoberfläche", width=8) }}
+{{ macros.image("{static}/images/screenshot_admin_create_user.png", "Neuen Nutzer Anlegen in der Administrationsoberfläche") }}
 
-#### 3. Token in die App übertragen
+#### Anzeige der vorhandenen Nutzer:innen
 
-Die Authentifikation von Nutzer:innen in iButtonCycle funktioniert über sogenannte "JSON-Web-Tokens" (kurz: JWT). Die Tokens, verwenden kryptografische Verfahren, um sicherzustellen, dass ein:e Nutzer:in berechtigten Zugriff haben.
+Am oberen Bildschirmrand der Administrationsoberfläche befindet sich eine Liste aller existierenden Nutzer:innen. Hier sollte der eben angelegte Account nun erscheinen.
 
-{{ macros.warning("Tokens sind wie Passwörter - also nicht an unbefugte Personen weitergeben, und auch nicht per Email oder andere unverschlüsselte Kanäle verschicken!") }}
+{{macros.image("{static}/images/screenshot_admin_show_user.png", "Anzeige der existierenden Nutzer:innen")}}
 
-Um einen Token in die App zu übertragen:
+## Verbindung der iButtonCycle App mit dem Server
 
-* auf den Button "Token anzeigen" klicken
-* den Token in die Zwischenablage kopieren
+Die Verbindung zwischen der iButtonCycle App und dem Server erfolgt über ein sogenanntes "JSON-Web-Tokens" (kurz: JWT). Es werden kryptografische Verfahren verwendet, um sicherzustellen, dass ein:e Nutzer:in berechtigten Zugriff hat.
 
-{{ macros.image("{static}/images/screenshot_admin_show_token.png", "Anzeigen des Tokens für die angelegte Nutzer:in", width=8) }}
+{{ macros.warning("Ein Token ist wie ein Passwort - es darf nicht an unbefugte Personen weitergegeben werden und sollte auch nicht über unverschlüsselte Kanäle (z.B. per Email) verschickt werden!") }}
 
-{{ macros.image("{static}/images/screenshot_admin_copy_token.png", "Anzeigen des Tokens für die angelegte Nutzer:in", width=8) }}
+Um eine Verbindung zwischen App und Server herzustellen, muss das **Token der Nutzer:in in der iButtonCycle App eingegeben werden**. Am einfachsten funktioniert das, wenn die Administrationsoberfläche des Servers im Browser des Smartphones mit der iButtonCycle App geöffnet wird. Dann kann das Token einfach per Copy & Paste in die App übertragen werden.
+
+Um das Token in die App zu übertragen, sind die folgenden Schritte nötig:
+
+<ul>
+<li>Öffne die Administrationsoberfläche des Servers in einem Browser (wie oben beschrieben).</li>
+<li>Klicke auf den Button "Token anzeigen" der Nutzer:in, für die die iButtonCycle App eingerichtet werden soll.<br/>
+{{ macros.image("{static}/images/screenshot_admin_show_token.png", "Anzeigen des Tokens für die angelegte Nutzer:in") }}
+</li>
+<li>Das Token wird angezeigt. Es besteht aus einer langen Zeichenkette, die mit "ey" beginnt. Das Token kann über den Button in die Zwischenablage kopiert werden<br/>
+{{ macros.image("{static}/images/screenshot_admin_copy_token.png", "Anzeigen des Tokens für die angelegte Nutzer:in") }}
+</li>
+<li>Wechsele zur iButtonCycle App</li>
+<li>Wähle "Speicherung auf einem Server" als Speicherort (<a href="{filename}step-by-step.md">siehe separate Anleitung</a>)</li>
+<li>Füge das Token in das Eingabefeld "bitte Token einfügen" ein. Dazu muss in der Regel lange auf das Eingabfeld gedrückt werden.<br/>
+{{ macros.device_image("{static}/images/screenshot_setup_server_insert_token.png", "Eingabefeld zum Einfügen des Nutzertokens")}}
+</li>
+<li>Drücke auf den "los geht's" Button.</li>
+</ul>
+
+{{macros.info('Solltest Du die iButtonCycle App zuvor mit lokaler Speicherung verwendet haben, musst Du sie zunächst im Reiter "Daten" unter "Daten löschen" -> "App zurücksetzen" zurücksetzen.')}}
+
 
 
 

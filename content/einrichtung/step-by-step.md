@@ -18,7 +18,7 @@ Starte die App.
 
 Du wirst zunächst gefragt, wo die Daten gespeichert werden sollen.
 
-{{ macros.device_image("{static}../images/screenshot_setup_1.jpeg", "Screenshot zu Setup: Auswahl des Speicherorts") }}
+{{ macros.device_image("{static}../images/screenshot_setup_1.png", "Screenshot zu Setup: Auswahl des Speicherorts") }}
 
 Die beiden Optionen bedeuten folgendes:
 

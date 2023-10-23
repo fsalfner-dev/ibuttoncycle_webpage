@@ -1,0 +1,11 @@
+{
+  "applinks": {
+      "apps": [],
+      "details": [
+      {
+        "appID": "8WN9BJCC65.de.salfner.biolog",
+        "paths": ["*"]
+      }
+    ]
+  }
+}

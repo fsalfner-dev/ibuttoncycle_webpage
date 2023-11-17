@@ -1,9 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "de.salfner.biolog",
-    "sha256_cert_fingerprints":
-    ["D0:90:B6:FD:20:18:71:C7:31:75:AC:56:94:DC:98:4A:C7:59:E5:45:C0:97:A8:DE:5E:85:8D:E6:5C:99:53:BA","4A:D8:06:86:A0:40:52:DC:CF:A2:A5:72:12:3A:E3:C6:31:0E:E0:A3:5C:9D:26:F6:FD:9C:0A:6E:F4:01:E1:F8"]
-  }
-}]

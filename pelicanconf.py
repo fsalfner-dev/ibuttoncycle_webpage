@@ -3,7 +3,7 @@ SITENAME = 'iButtonCycle App'
 SITEURL = ''
 
 PATH = 'content'
-STATIC_PATHS = ['images', 'download', '.well-known']
+STATIC_PATHS = ['images', 'download', 'data']
 
 TIMEZONE = 'Europe/Berlin'
 

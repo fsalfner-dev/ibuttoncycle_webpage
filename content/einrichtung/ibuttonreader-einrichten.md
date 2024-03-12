@@ -13,8 +13,10 @@ Achtung: Stecke den iButton noch nicht in den Rechner ein. Zunächst müssen die
 1. Lade Dir den [iButtonReader]({static}/download/iButtonReader.zip) herunter.
 1. Entpacke das ZIP Archiv in einem Ordner Deiner Wahl
 1. Im ZIP Archiv gibt es eine Datei `ibuttonreader_sample.properties`. Erstelle eine Kopie dieser Datei mit dem Namen `ibuttonreader.properties` (ohne das "_sample").
-1. Editiere die Datei `ibuttonreader.properties` und gib in der Zeile `FILE_PATH` den vollständigen Pfad eines Ordners an, in dem die CSV Dateien abgespeichert werden sollen.  
-Falls Du einen Cloudspeicher nutzt, um die CSV Datei mit dem Smartphone zu synchronisieren, gib den Pfad des Cloudspeichers an, also z.B. `/home/user/Nextcloud/ibutton` 
+1. Editiere die Datei `ibuttonreader.properties` 
+    * gib in der Zeile `FILE_PATH` den vollständigen Pfad eines Ordners an, in dem die CSV Dateien abgespeichert werden sollen. Falls Du einen Cloudspeicher nutzt, um die CSV Datei mit dem Smartphone zu synchronisieren, gib den Pfad des Cloudspeichers an, also z.B. `/home/user/Nextcloud/ibutton`. 
+    * gib in der Zeile `IBUTTON_TZ` die Zeitzone an, für die die Uhr des iButton gestellt wurde. Wurde der iButton z.B. mit dem Programm iButtonViewer von AnalogDevices programmiert, so ist die Uhrzeit in der lokalen Zeitzone, d.h. in Deutschland nach `Europe/Berlin` gestellt.  
+
 
 #### Einrichten der 1-wire Treiber unter Windows
 

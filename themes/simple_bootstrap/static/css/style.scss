@@ -26,59 +26,82 @@ section {
   height: 3rem;
 }
 
-.device-wrapper {
-    max-width: 300px;
-    width: 100%;
-  }
-  
-  .device {
-    position: relative;
-    background-size: cover;
-  }
-  
-  .device::after {
-    position: absolute;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-  
-  .device .screen {
-    position: absolute;
-    background-size: cover;
-    pointer-events: auto;
-  }
-  
-  .device .button {
-    position: absolute;
-    cursor: pointer;
-  }
-  
-  .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] {
-    padding-bottom: 198.898071625%;
-  }
-  
-  .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .screen {
-    top: 3.1855955679%;
-    left: 6.8870523416%;
-    width: 86.2258953168%;
-    height: 93.6288088643%;
-  }
-  
-  .device[data-device=iPhoneX][data-orientation=portrait][data-color=black]::after {
-    content: "";
-    background-image: url("../images/portrait_black.png");
-  }
-  
-  .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .button {
-    display: none;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-  }
-  
+// ------------- large device mockup screens ----------------------
+.device-wrapper-l {
+  position: relative;
+}
+
+// size of screen: width=1086 with offset left/top=67/53
+.device-wrapper-l > img {
+  width: 363px; 
+  margin-left: 22px; 
+  margin-top: 17px; 
+  border-radius: 20px;
+}
+
+.device-wrapper-l .device-mock-wrapper {
+  position: absolute; 
+  top:0px; 
+  left:0px;
+}
+
+// total width of device mockup: 1230
+.device-wrapper-l .device-mock-wrapper > img {
+  width:410px;
+}
+
+// ---------------- medium device mockup screens --------------------
+
+.device-wrapper-m {
+  position: relative;
+}
+
+// size of screen: width=1086 with offset left/top=67/53
+.device-wrapper-m > img {
+  width: 273px; 
+  margin-left: 16px; 
+  margin-top: 13px; 
+  border-radius: 18px;
+}
+
+.device-wrapper-m .device-mock-wrapper {
+  position: absolute; 
+  top:0px; 
+  left:0px;
+}
+
+// total width of device mockup: 1230
+.device-wrapper-m .device-mock-wrapper > img {
+  width:307px;
+}
+
+// ---------------- small device mockup screens --------------------
+
+.device-wrapper-s {
+  position: relative;
+}
+
+// size of screen: width=1086 with offset left/top=67/53
+.device-wrapper-s > img {
+  width: 218px; 
+  margin-left: 13px; 
+  margin-top: 10px; 
+  border-radius: 18px;
+}
+
+.device-wrapper-s .device-mock-wrapper {
+  position: absolute; 
+  top:0px; 
+  left:0px;
+}
+
+// total width of device mockup: 1230
+.device-wrapper-s .device-mock-wrapper > img {
+  width:246px;
+}
+
+
+
   section.cta {
     position: relative;
     padding: 15rem 0;

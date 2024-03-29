@@ -148,7 +148,7 @@ Der Bildschirm zur Überprüfung der Basaltemperaturen besteht aus mehreren Teil
 
 {{macros.image("{static}../images/screenshot_set_base_temp_explanation.png", "Screenshot mit Erklärungen zur Überprüfung der Basaltemperaturen", padding=5)}}
 
-* ganz oben zwei Buttons "Abbruch" und "Speichern", den Importprozess (für alle Nächte) beenden.
+* ganz oben zwei Buttons: ein grüner Button zum *Speichern* (Icon mit Pfeil), und ein roter Button, um den Importprozess (für alle Nächte) *beenden* (Icon mit dem Kreuz).
 * eine Datumszeile mit Navigation. Hier kann zwischen allen Tagen/Nächten, für die Messwerte vorliegen, gewechselt werden
 * Einem Tabellenkopf, der die **Durchschnittstemperatur der drei niedrigsten (blau markierten) Messwerte** angibt
 * Einer (scrollbaren) Liste aller Temperaturmesswerte für den jeweiligen Tag / Nacht, als "vertikaler Zeitverlauf" mit den neuesten / spätesten Messungen weiter oben.
@@ -160,17 +160,17 @@ Jede Zeile mit einem Temperaturmesswert hat dabei folgenden Aufbau:
 * Die gemessene Temperatur in °C
 * Einem Schalter, mit dem Messwerte manuell von der Berechnung der Basaltemperatur ausgenommen werden können
 * Die Zeile ist **blau hinterlegt**, falls es sich um eine der drei niedrigsten Temperaturmessungen handelt
-* Die Zeile ist **rot hinterlegt**, falls der Messwert (durch Betätigen des Schalters) ignoriert werden soll
+* Die Zeile ist **durchgestrichen / ausgegraut**, falls der Messwert (durch Betätigen des Schalters) ignoriert werden soll
 
-Der oben dargestellte Screenshot stellt den Messwertverlauf zur Bestimmung der Basaltemperatur für `Mittwoch, den 20.7.22` dar. 
+Der oben dargestellte Screenshot stellt den Messwertverlauf zur Bestimmung der Basaltemperatur für `Mittwoch, den 7.02.24` dar. 
 
-* Es werden alle Messungen zwischen `Dienstag dem 19.7.22 15:00 Uhr` bis zur letzten Messung vor `Mittwoch, den 20.7.22 14:59 Uhr` berücksichtigt, die über 35°C liegen und nicht der erste Messwert nach dem Anstieg über 35°C bzw. der letzte Messwert vor dem Abfall unter 35°C sind.
-* Die Temperatur, die nach Drücken von "Speichern" als Basaltemperatur in der Kalenderansicht eingetragen werden soll ist `36,997°C` (blaue Schrift im Tabellenkopf)
-* Die drei blau hinterlegten Zeilen zeigen die einzelnen Messwerte, die zur Berechnung der Basaltemperatur von 36,997°C herangezogen werden. Es sind die Messwerte von
-    * `Mittwoch, 4:07 Uhr`
-    * `Mittwoch, 4:52 Uhr`
-    * `Mittwoch, 5:07 Uhr`
-* Der Messwert am `Mittwoch, 6:07 Uhr` wird ignoriert.
+* Es werden alle Messungen zwischen `Dienstag dem 6.2.24 15:00 Uhr` bis zur letzten Messung am `Mittwoch, den 7.2.24 14:59 Uhr` berücksichtigt, die *über 35°C liegen* und nicht der erste Messwert nach dem Anstieg über 35°C bzw. der letzte Messwert vor dem Abfall unter 35°C sind.
+* Die Temperatur, die nach Drücken von "Speichern" als Basaltemperatur in der Kalenderansicht eingetragen werden soll ist `36,578°C` (blaue Schrift im Tabellenkopf)
+* Die zwei blau hinterlegten Zeilen zeigen zwei der drei Messwerte, die zur Berechnung der Basaltemperatur von 36,578°C herangezogen werden. Es sind die Messwerte von
+    * `Dienstag, 21:12 Uhr`
+    * `Dienstag, 21:27 Uhr`
+    * der dritte Messwert ist im Screenshot nicht zu sehen (man kann aber scrollen)
+* Der Messwert am `Dienstag, 23:57 Uhr` wird ignoriert.
 
 
 ##### Bedienung des Bildschirms ##### {: #basaltemperatur_bedienung}
@@ -184,13 +184,13 @@ Die Basaltemperaturen der gemessenen Tage/Nächte werden gemäß folgender Schri
 1. Wiederhole die Schritte 1 bis 4 für **alle Tage/Nächte**
 1. **Drücke auf "Speichern"** um die Basaltemperaturen in die "NFP Kalenderansicht" zu übernehmen. Drücken von "Abbruch" beendet den Importvorgang ohne zu Speichern. Es wird für *keine* Basaltemperatur übernommen. 
 
-{{macros.warning('Der "Speichern" Button speichert die Basaltemperaturen <strong>für alle Tage/Nächte</strong> - er soll erst gedrückt werden, wenn die <strong>Messwerte für alle Tage/Nächte überprüft wurden</strong>. Gleichermaßen beendet "Abbruch" den Importvorgang - es wird für keine der Tage/Nächte eine Basaltemperatur eingetragen.')}}
+{{macros.warning('Der "Speichern" Button rechts oben speichert die Basaltemperaturen <strong>für alle Tage/Nächte</strong> - er soll erst gedrückt werden, wenn die <strong>Messwerte für alle Tage/Nächte überprüft wurden</strong>. Gleichermaßen beendet "Abbruch" den Importvorgang - es wird für keine der Tage/Nächte eine Basaltemperatur eingetragen.')}}
 
 ##### Was tun bei nicht verwertbaren Messungen?
 
 Sollten für einen Tag Messungen angezeigt werden, Du aber keinen Wert für diesen Tag eintragen möchtest (z.B. weil Du den iButton erst nach 15:00 Uhr entfernt hast), gibt es zwei Möglichkeiten:
 
-* Du ignorierst alle Messwerte, indem Du den Schalter in jeder Zeile "auf rot" schaltest. Wenn iButtonCycle keine Durchschnittstemperatur ermitteln kann (siehe angezeigte Basaltemperatur am oberen Bildschirmrand), dann wird auch keine Basaltemperatur eingetragen.
+* Du ignorierst alle Messwerte, indem Du alle blauen "Schalter" nach links "auf grau" schaltest. Wenn iButtonCycle keine Durchschnittstemperatur ermitteln kann (siehe angezeigte Basaltemperatur am oberen Bildschirmrand), dann wird auch keine Basaltemperatur eingetragen.
 * Oder Du merkst Dir das Datum mit dem ungültigen Wert, und drückst zunächst auf "Speichern". Dann wird zunächst der falsche Temperaturwert eingetragen, den Du anschließend in der Kalenderdarstellung wie folgt entfernen kannst:
     * Wechsle zur Kalenderansicht
     * Tippe auf die Zeile mit der falschen Temperatur

@@ -1,5 +1,5 @@
 Title: iButton Import einrichten
-Date: 2022-12-10
+Date: 2024-03-27
 Star_prio: 2
 Summary: Import von iButton Temperaturmessungen einrichten
 
@@ -23,16 +23,18 @@ Den Freischaltcode erhältst Du per Email. Der Code besteht aus einer langen Zei
 Die Einrichtung erfolgt im Tab "Daten". Wechsle zum Daten Tab durch tippen auf das Icon am unteren Bildschirmrand.
 
 ##### 1. Codeeingabe starten
-Drücke auf den Button "Code eingeben" in der obersten Karte.
+Drücke auf den Button "Code eingeben" in der Karte "CSV Import Einrichten".
 
 {{ macros.device_image("{static}../images/screenshot_csv_unlock_1.png", "Screenshot zum Start des Freischaltvorgangs") }}
 
 #### 2. Email-Adresse und Code eingeben
 Gib im Feld "Email Adresse an die der Code verschickt wurde" die Email-Adresse ein. Groß- und Kleinschreibung spielen dabei keine Rolle.
 
+{{ macros.device_image("{static}../images/screenshot_csv_unlock_2.png", "Screenshot zur Eingabe der Email Adresse") }}
+
 Kopiere den Code, der mit `eyJhbGciO` beginnt, aus der Email, die wir Dir geschickt haben, und füge ihn in das zweite Eingabefeld ein. Am einfachsten geht das, wenn Du die Email mit dem Email-Programm auf Deinem Smartphone öffnest, den Code markierst, kopierst und dann in der iButtonCycle App einfügst. Bei iPhones muss seit iOS 16 das Einfügen des Codes aus der Zwischenablage extra bestätigt werden.
 
-{{ macros.device_image("{static}../images/screenshot_csv_unlock_3.png", "Screenshot zur Eingabe von Email Adresse und Einfügen des Freischaltcodes") }}
+{{ macros.device_image("{static}../images/screenshot_csv_unlock_3.png", "Screenshot zum Einfügen des Freischaltcodes") }}
 
 #### 3. Code überprüfen
 Tippe jetzt auf den Button "Code überprüfen" 

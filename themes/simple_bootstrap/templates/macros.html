@@ -29,8 +29,8 @@
 
 {% macro device_image(src, alt, size='m', padding=3, align='center') -%}
 <div class="container">
-  <div class="row d-flex justify-content-{{align}} pb-{{padding}}">
-    <div class="col-md-8 col-l-{{width}} ms-auto">
+  <div class="row d-flex justify-content-{{align}} mb-{{padding}}">
+    <div class="col-md-8 ms-auto">
       <div class="device-wrapper-{{size}}">
         <img src="{{src}}" alt="{{alt}}" />
         <div class="device-mock-wrapper">
@@ -58,6 +58,19 @@
 <div class="alert alert-info py-{{padding}}" role="alert">
   <h5 class="alert-heading"><i class="bi bi-info-square"></i> Info</h5>
   {{body}}
+</div>
+{%- endmacro %}
+
+{% macro linkbox(title, img, alt, link, columns=3) -%}
+<div class="col-12 col-lg-3">
+  <a href="{{link}}">
+      <div class="card">
+          <img src="{{img}}" style="width:100%" alt="{{alt}}" />
+          <div class="card-body d-flex align-items-center justify-content-center" style="height:5em;">
+              <div class="text-center">{{title}}</div>
+          </div>
+      </div>
+  </a>
 </div>
 {%- endmacro %}
 

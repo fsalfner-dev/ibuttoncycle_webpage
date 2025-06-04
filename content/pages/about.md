@@ -52,3 +52,6 @@ Quelle: [https://www.e-recht24.de/impressum-generator.html](https://www.e-recht2
 iButtonCycle wird von [Deutsche Telekom MMS](https://mobiledevice.cloud/) unterstützt.
 
 [Die Website benutzt Freepik icons von Flaticon](https://www.flaticon.com/free-icons/easy)
+
+Foto des Fieberthermometers von [Edgar Soto](https://unsplash.com/@edgardo1987?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on Unsplash
+  

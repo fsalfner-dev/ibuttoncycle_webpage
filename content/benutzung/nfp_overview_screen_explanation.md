@@ -1,5 +1,5 @@
 Title: Die NFP Übersichtsseite
-Date: 2022-12-10
+Date: 2025-06-04
 star_prio: 1
 Summary: Die Dokumentation zur Hauptansicht der iButtonCycle App
 
@@ -24,21 +24,23 @@ Da iButtonCycle für Smartphones entwickelt wurde, verläuft die Zeitachse im Ge
 
 Jeder Tag trägt eine von drei Farben:
 
-* rot, falls an diesem Tag eine Monatsblutung war
-* grau, solange noch kein verlässlicher Temperaturanstieg festgestellt wurde
-* grün, ab dem Tag, ab dem ein verlässlicher Temperaturanstieg festgestellt wurde (bis zur nächsten Periode)
+* **rot**, falls an diesem Tag eine Monatsblutung war
+* **grau**, solange nach der NFP Methode aufgrund von Basaltemperatur und Zervixschleim noch keine Empfängnis ausgeschlossen werden kann. 
+* **grün**, ab dem Tag, ab dem ein verlässlicher Temperaturanstieg und eine verlässliche Veränderung des Zervixschleims festgestellt werden kann (bis zur nächsten Periode)
 
 {{ macros.image("{static}../images/screenshot_nfp_colors_explained.png", "Erklärung zur Farbgebung") }}
 
-{{ macros.info("Eine detaillierte Anleitung zur Basalthemperatur findest Du <a href=\"{filename}temperature_explanation.md\">hier</a>")}}
-
 {{macros.warning("
-Grün eingefärbte Tage beziehen sich <strong>ausschließlich auf die Temperatur</strong>. Die symptothermale Methode verlangt zusätzlich zur Temperatur <strong>ein zweites Symptom</strong>:
+In der natürlichen Familienplanung (NFP) werden zwei unterschiedliche symptothermale Methoden verwendet:
 <ul>
-  <li>Die Beschaffenheit des Gebärmutterschleims</li>
-  <li>Der Zustand des Gebärmutterhalses (noch nicht von iButtonCycle unterstützt)</li>
+  <li>Kombination aus Basaltemperatur und der Beschaffenheit des Gebärmutterschleims (Zervixschleims)</li>
+  <li>Kombination aus Basaltemperatur und dem Zustand des Gebärmutterhalses.</li>
 </ul>
-<strong>Die unfruchtbare Phase kann dadurch eventuell erst später beginnen, obwohl die Tage schon grün markiert sind!</strong> Siehe das <a href=\"{filename}temperature_explanation.md\">Beispiel</a>.
+<strong>Die iButtonCycle App unterstützt nur die erste Methode (Temperatur + Zervixschleim)</strong>. Mehr Informationen können auf der Webseite <a href=\"https://www.mynfp.de/nfp-regeln\">MyNFP</a> nachgelesen werden.
+
+<p>Zusätzlich zur symptotermalen Methode erlaubt die iButtonCycle App die Auswertung der Basaltemperatur <em>ohne ein zweites Symptom</em>. Dies ist <strong>nicht kompatibel mit der NFP Methode und bietet nicht die gleiche Sicherheit zur Empfängnisverhütung!</strong></p>
+
+Mehr Details zur Basaltemperatur gibt das folgende <a href=\"{filename}temperature_explanation.md\">Beispiel</a>.
 ")}}
 
 
@@ -51,7 +53,10 @@ Der folgende Screenshot gibt einen Überblick:
 
 ### Darstellung der Basaltemperatur
 
-Neben der Angabe des Kalendertags am linken Bildschirmrand gibt ein Punkt die Basaltemperatur an. Je weiter rechts der Punkt erscheint, desto höher war die Basaltemperatur. Ignorierte Messwerte werden durch einen grauen (statt schwarzen) Punkt dargestellt.
+Neben der Angabe des Kalendertags am linken Bildschirmrand gibt ein Punkt die Basaltemperatur an. 
+
+* **Je weiter rechts der Punkt erscheint, desto höher war die Basaltemperatur**. 
+* Ignorierte Messwerte werden durch einen grauen (statt schwarzen) Punkt dargestellt.
 
 {{macros.info("Weitere Informationen zur Basalthemperatur findest Du <a href=\"{filename}temperature_explanation.md\">hier</a>")}}
 

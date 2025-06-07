@@ -1,5 +1,5 @@
 Title: Basaltemperatur
-Date: 2023-04-09
+Date: 2025-06-06
 Summary: Wie in iButtonCycle Basaltemperaturen gehandhabt werden
 
 {% import 'macros.html' as macros %}
@@ -19,20 +19,22 @@ In der NFP Ansicht wird für jeden Zyklustag eine Basaltemperatur angezeigt. Bei
 IButtonCycle färbt den Hintergrund der Zyklustage farbig ein um anzuzeigen:
 
 * rot, falls an diesem Tag eine Monatsblutung war
-* grau, solange noch kein verlässlicher Temperaturanstieg festgestellt wurde
-* grün, ab dem Tag, ab dem ein verlässlicher Temperaturanstieg festgestellt wurde (bis zur nächsten Periode)
+* grau, solange die Auswertungsmethode noch keine sichere Phase erkannt hat
+* grün, ab dem Tag, ab dem eine sichere Phase erkannt wurde (bis zur nächsten Periode)
 
 {{ macros.image("{static}../images/screenshot_nfp_colors_explained.png", "Erklärung zur Farbgebung") }}
 
-{{macros.warning("Grün eingefärbte Tage beziehen sich <strong>ausschließlich auf die Temperatur</strong>. Die symptothermale Methode verlangt zusätzlich zur Temperatur ein zweites Symptom:
-<ul>
-<li>Die Beschaffenheit des Gebärmutterschleims</li>
-<li>Der Zustand des Gebärmutterhalses</li>
-</ul>
-<strong>Die unfruchtbare Phase kann dadurch eventuell erst später beginnen, obwohl die Tage schon grün markiert sind!</strong>
-<p>iButtonCycle unterstützt als zweite Methode (noch) ausschließlich die Beschaffenheit des Gebärmutterschleims.</p>")}}
+{{macros.warning("Die iButtonCycle App besitzt unterschiedliche Auswertungs-modi:
+<ol>
+<li>Die NFP Methode aus Basaltemperatur und Beschaffenheit des Gebärmutterschleims (Zervixschleim). Die sichere (grüne) Phase hängt von einem Anstieg der Basaltemperatur und einer Veränderung der Beschaffenheit des Gebärmutterschleims ab. Eine ausführliche Anleitung gibt die Webseite <a href=\"https://www.mynfp.de/nfp-regeln\">MyNFP</a></li>
+<li>Eine Auswertung der Basaltemperatur <em>ohne ein weiteres Symptom</em> (<strong>nicht kompatibel mit NFP</strong>). Die sichere (grüne) Phase hängt ausschließlich vom Anstieg der Basaltemperatur ab.</li>
+</ol>
+<p>
+</p>
+Die Methode kann im Reiter <em>Mehr</em> unter <em>Einstellungen</em> ausgewählt werden.
+")}}
 
-#### Wann erkennt iButtonCycle einen Anstieg der Basaltemperatur?
+## Wann erkennt iButtonCycle einen Anstieg der Basaltemperatur?
 
 iButtonCycle erkennt einen verlässlichen Anstieg der Basaltemperatur mit Hilfe eines Algorithmus, der in mehr Details [hier](https://www.mynfp.de/temperatur-auswerten) erklärt wird. Im wesentlichen basiert der Algorithmus auf folgender Logik:
 

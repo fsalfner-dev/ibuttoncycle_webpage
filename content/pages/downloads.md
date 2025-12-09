@@ -14,7 +14,7 @@ Es gibt eine eigene Software, um die Messwerte der iButton Thermometer auszulese
 
 Anstatt die Daten auf dem Telefon zu speichern, kann die iButtonCycle App die Daten auch auf einem Server speichern.
 
-* Download: noch nicht verfügbar
+* Download: Die Software wird als Docker Container [auf Docker Hub zur Verfügung gestellt](https://hub.docker.com/r/fsalfnerdev/ibuttoncycle-api)
 * Anleitung: [Eigenen Server aufsetzen]({filename}../einrichtung/server-aufsetzen.md)
 
 ## AiBA Software zur grafischen Auswertung von Temperaturmessungen des iButtons

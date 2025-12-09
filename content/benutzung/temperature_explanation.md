@@ -1,4 +1,5 @@
 Title: Was ist die Basaltemperatur
+Slug: basaltemperatur
 Date: 2025-12-11
 Summary: Was ist die Basaltemperatur und wie wird sie in iButtonCycle gehandhabt?
 

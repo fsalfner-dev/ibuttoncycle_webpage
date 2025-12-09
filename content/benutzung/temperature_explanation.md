@@ -1,6 +1,6 @@
-Title: Basaltemperatur
-Date: 2025-06-06
-Summary: Wie in iButtonCycle Basaltemperaturen gehandhabt werden
+Title: Was ist die Basaltemperatur
+Date: 2025-12-11
+Summary: Was ist die Basaltemperatur und wie wird sie in iButtonCycle gehandhabt?
 
 {% import 'macros.html' as macros %}
 ## Einführung zu Basaltemperaturen ## {: #methoden_uebersicht }
@@ -31,7 +31,6 @@ IButtonCycle färbt den Hintergrund der Zyklustage farbig ein um anzuzeigen:
 </ol>
 <p>
 </p>
-Die Methode kann im Reiter <em>Mehr</em> unter <em>Einstellungen</em> ausgewählt werden.
 ")}}
 
 ## Wann erkennt iButtonCycle einen Anstieg der Basaltemperatur?
@@ -44,8 +43,26 @@ Ein verlässlicher Temperaturanstieg wird erkannt, wenn
 1. ist die Temperatur des dritten höheren Tages zwar höher, aber nicht 0.2°C, dann wird ein Temperaturanstieg erkannt, wenn ein vierter Tag ebenfalls höher als die sechs vorherigen ist
 1. Fällt die Temperatur des 2. oder 3. höheren Tage wieder auf den Wert der vorherigen sechs Tage, wird ein Temperaturanstieg erkannt, falls ein vierter Tag mit mindestens 0.2°C höherer Termperatur vorliegt.
 
+## Wann erkennt iButtonCycle eine Veränderung der Zervixschleimbeschaffenheit?
 
-#### Überspringen von Messwerten
+Die Beschaffenheit des Zervixschleims wird in verschiedene Kategorien (`S+`, `S`, `f`, `-` und `t`) eingeteilt.
+Eine ausführliche Beschreibung der Kategorien [findet sich auf einer separaten Seite]({filename}mucus_explanation.md).
+
+Für die NFP Methode muss neben einem Temperaturanstieg auch die Qualität des Zervixschleims abgenommen haben. Die iButtonCycle App erkennt einen Abfall der Zervixschleimbeschaffenheit, **wenn nach der individuell besten Schleimqualität drei Tage mit schlechterer Schleimqualität folgen.** 
+
+## Auswahl der NFP Auswertungs-Methode
+
+Die Methode kann im Reiter <em>Mehr</em> unter <em>Einstellungen</em> ausgewählt werden:
+
+{{ macros.device_image("{static}../images/screenshot_select_nfp_method.png", "Screenshot zur Auswahl der NFP Auswertungsmethode") }}
+
+Anschließend kann die Auswertungsmethode durch Tippen auf eine der beiden Optionen ausgewählt werden:
+
+{{ macros.device_image("{static}../images/screenshot_select_nfp_method_2.png", "Screenshot zur Auswahl der NFP Auswertungsmethode") }}
+
+
+
+## Überspringen von Messwerten
 
 Die Basaltemperatur ist ein wichtiger Bestandteil der symptothermalen Methode. Die Temperaturmessungen können aber verfälscht sein, z.B. durch
 
@@ -64,31 +81,4 @@ Temperaturmesswerte, die für die Auswertung des Temperaturanstiegs ignoriert we
 
 ## Eintragen von Basaltemperaturen in iButtonCycle ## {: #basaltemp_eintragen }
 
-iButtonCycle erlaubt das Eintragen von Basaltemperaturen auf drei verschiedene Weisen:
-
-1. Manuelles Eintragen einer Basaltemperatur bei nur einer Messung pro Zyklustag ([Methode 1](#methoden_uebersicht))
-1. Eintragen einer gemessenen Basaltemperatur pro Zyklustag ([Methode 1](#methoden_uebersicht)) bei Verwendung eines automatisierten Thermometers wie dem iButton, das einmal pro Nacht misst
-1. Auswahl von drei niedrigsten Temperaturen bei Verwendung eines automatischen Thermometers, das mehrmals pro Nacht misst ([Methode 2](#methode_2_einfuehrung))
-
-Das manuelle Eintragen ist im folgenden Abschnitt beschrieben, die Optionen 2 und 3 erfordern die Auswertung eines automatisierten Thermometers und sind im [weiter unten beschrieben](#automatisiert).
-
-#### Manuelles Eintragen einer Basaltemperatur
-
-Um die Temperatur für einen Zyklustag einzutragen gehe wie folgt vor:
-
-1. Tippe in der NFP Hauptansicht auf den entsprechenden Zyklustag
-1. Klappe die Karte "Temperatur" aus, indem Du auf den Winkel tippst
-1. Tippe auf "editieren" in der Zeile "Temperatur"
-1. Trage die Temperatur im Dialogfenster ein
-1. Tippe auf "OK"
-1. Tippe auf "Speichern"
-
-Diese Schritte sind in den folgenden Screenshots dargestellt:
-
-{{macros.device_image("{static}../images/screenshot_set_temp_1.png","Screenshot zu Temperaturdetails")}}
-{{macros.device_image("{static}../images/screenshot_set_temp_2.png","Screenshot zu Dialog zur Temperatureingabe")}}
-
-#### Eintragen von Temperaturen eines automatisierten Thermometers {: #automatisiert }
-
-Die Auswertung der Messwerte eines automatisierten Thermometers ist ausführlich in einem [separaten Artikel am Beispiel iButton]({filename}ibutton_csv_import.md) beschrieben. 
-
+Es gibt verschiedene Methoden, wie die Basaltemperatur bestimmt und in der iButtonCycle App eingetragen werden kann. [Einen Überblick gibt die folgende Seite]({filename}setup_overview.md)

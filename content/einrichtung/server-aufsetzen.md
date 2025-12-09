@@ -1,5 +1,5 @@
 Title: Einen eigenen Server aufsetzen
-Date: 2023-06-17
+Date: 2025-12-09
 Summary: Detaillierte Anleitung zur Einrichtung eines iButtonCycle Servers
 
 {% import 'macros.html' as macros %}
@@ -18,13 +18,13 @@ Zum Betrieb wird ein Linux-basierter Server mit folgenden Anforderungen benötig
 
 #### Hinweise zum Betriebssystem
 
-Der iButtonCycle Server verwendet als Datenbank *MariaDB*, die für 32-bit Betriebssysteme nicht als Docker-Container zur Verfügung steht. Daher gibt es die iButtonCycle Server Software nur für ein 64-bit Betriebssystem der Architekturen `amd64` oder `arm64`. 
+Der iButtonCycle Server verwendet als Datenbank *MariaDB*, die für 32-bit Betriebssysteme nicht als Docker-Container zur Verfügung steht. Daher gibt es die iButtonCycle Server Software nur für ein 64-bit Betriebssystem der Architekturen `amd64` oder `arm64`.
 
-Für den Betrieb auf einem RaspberryPi bedeutet dies, dass das Standard-Betriebssystem `raspbian` nicht funktioniert, da es lediglich ein 32-bit Betriebssystem ist. Daher stattdessen z.B. die 64-bit Raspberrypi Variante von Ubuntu Server verwenden.
+Für den Betrieb auf einem RaspberryPi hat sich die 64-bit Variante von Ubuntu Server als robust erwiesen.
 
 #### Hinweise zu Docker
 
-Der iButtonCycle Server wird als Docker Container zur Verfügung gestellt, d.h. auf dem Server muss Docker und [Docker-compose](https://docs.docker.com/compose/) installiert sein. Installationsanleitungen finden sich [auf den Webseiten von Docker](https://www.docker.com)
+Der iButtonCycle Server wird als Docker Container zur Verfügung gestellt, d.h. auf dem Server muss Docker installiert sein. Installationsanleitungen finden sich [auf den Webseiten von Docker](https://www.docker.com)
 
 #### Hinweise zur Erreichbarkeit über das Internet
 
@@ -100,21 +100,23 @@ Um das Token in die App zu übertragen, sind die folgenden Schritte nötig:
 
 <ul>
 <li>Öffne die Administrationsoberfläche des Servers in einem Browser (wie oben beschrieben).</li>
-<li>Klicke auf den Button "Token anzeigen" der Nutzer:in, für die die iButtonCycle App eingerichtet werden soll.<br/>
+<li>Klicke auf den Button "Token zeigen" der Nutzer:in, für die die iButtonCycle App eingerichtet werden soll.<br/>
 {{ macros.image("{static}/images/screenshot_admin_show_token.png", "Anzeigen des Tokens für die angelegte Nutzer:in") }}
 </li>
 <li>Das Token wird angezeigt. Es besteht aus einer langen Zeichenkette, die mit "ey" beginnt. Das Token kann über den Button in die Zwischenablage kopiert werden<br/>
 {{ macros.image("{static}/images/screenshot_admin_copy_token.png", "Anzeigen des Tokens für die angelegte Nutzer:in") }}
 </li>
 <li>Wechsele zur iButtonCycle App</li>
-<li>Wähle "Speicherung auf einem Server" als Speicherort (<a href="{filename}step-by-step.md">siehe separate Anleitung</a>)</li>
-<li>Füge das Token in das Eingabefeld "bitte Token einfügen" ein. Dazu muss in der Regel lange auf das Eingabfeld gedrückt werden.<br/>
+<li>In der iButtonCycle App wechsle in den Reiter "Daten" und scrolle bis Du die Karte "Mit Server verbinden" siehst. Tippe auf den Button "Verbindung starten"<br/>
+{{ macros.device_image("{static}/images/screenshot_connect_to_server.png", "Mit Server verbinden") }}
+</li>
+<li>Füge das Token in das Eingabefeld "Token einfügen" ein. Dazu muss in der Regel lange auf das Eingabfeld gedrückt werden, um den Inhalt aus der Zwischenablage einzufügen. Gegebenenfalls musst Du noch bestätigen, dass Du das Einfügen aus der Zwischenablage erlaubst.<br/>
 {{ macros.device_image("{static}/images/screenshot_setup_server_insert_token.png", "Eingabefeld zum Einfügen des Nutzertokens")}}
 </li>
-<li>Drücke auf den "los geht's" Button.</li>
+<li>Bei erfolgreicher Verbindung startet das Tutorial, dass Du entweder nochmal anschauen, oder mit dem Button "Tutorial beenden" beenden kannst. Deine Daten werden nun nicht mehr auf dem Telefon, sondern auf dem Server gespeichert.
 </ul>
 
-{{macros.info('Solltest Du die iButtonCycle App zuvor mit lokaler Speicherung verwendet haben, musst Du sie zunächst im Reiter "Daten" unter "Daten löschen" -> "App zurücksetzen" zurücksetzen.')}}
+{{macros.info('Wenn Du Deine Daten doch wieder auf dem Telefon speichern möchtest, kannst Du im Reiter "Daten" Dich wieder vom Server abmelden.')}}
 
 
 

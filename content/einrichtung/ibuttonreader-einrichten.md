@@ -31,7 +31,7 @@ Eine ausführliche Anleitung ist auf den (Seiten von Analog Devices)[https://www
 
 #### Einrichten der 1-wire Treiber unter Linux
 
-* Installiere libusb, z.B. unter Debian / Ubuntu mit `apt install libusb` bzw. `dnf install libusb` 
+* Installiere libusb, z.B. unter Debian / Ubuntu mit `apt install libusb-0.1-4` bzw. `dnf install libusb` 
 * Java muss auf dem System installiert sein
 * Der USB Reader funktioniert nicht, wenn das `ds2490` Kernel Modul aktiv ist. Um zu verhindern, dass das Modul geladen wird, muss die Zeile `blacklist ds2490` in einer Blacklist Datei hinzugefügt werden. Je nach Linux Distribution kann z.B. die Datei `/etc/modprobe.d/ibutton-blacklist.conf` angelegt werden, die die Blacklist-Zeile enthält
 * Um den Reader mit den richtigen Berechtigungen auszustatten, erstelle eine Datei `/etc/udev/rules.d/99-one-wire.rules` mit dem Inhalt `ATTRS{idVendor}=="04fa", ATTRS{idProduct}=="2490", GROUP="plugdev", MODE="0664"`.

@@ -27,8 +27,9 @@ Jeder Tag trägt eine von drei Farben:
 * **rot**, falls an diesem Tag eine Monatsblutung war
 * **grau**, solange nach der NFP Methode aufgrund von Basaltemperatur und Zervixschleim noch keine Empfängnis ausgeschlossen werden kann. 
 * **grün**, ab dem Tag, ab dem ein verlässlicher Temperaturanstieg und eine verlässliche Veränderung des Zervixschleims festgestellt werden kann (bis zur nächsten Periode)
+* **hellblau**, falls der Zyklus nicht in die Zykklusauswertung einfließen soll, wie [auf dieser Seite erklärt wird]({filename}ignore_cycle.md)
 
-{{ macros.image("{static}../images/screenshot_nfp_colors_explained.png", "Erklärung zur Farbgebung") }}
+{{ macros.image("{static}../images/screenshot_nfp_colors_explained.png", "Erklärung zur Farbgebung", padding=4) }}
 
 {{macros.warning("
 In der natürlichen Familienplanung (NFP) werden zwei unterschiedliche symptothermale Methoden verwendet:

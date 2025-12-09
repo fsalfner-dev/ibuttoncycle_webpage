@@ -16,43 +16,43 @@ Zur Bestimmung der Beschaffenheit müssen Empfinden und Aussehen bewertet werden
 
 <div class="table-responsive">
 <table class="table mb-5">
-<thead><tr><th>Empfinden</th><th></th><th>Aussehen</th><th>Symbol</th></tr></thead>
+<thead><tr><th>Symbol</th><th>Empfinden</th><th></th><th>Aussehen</th></tr></thead>
 <tbody>
 <tr>
+  <td class="fst-bold">t</td>
   <td>trocken, trockenes, raues, juckendes, unangenehmes Gefühl</td>
   <td class="px-3">und</td>
   <td>nichts gesehen, kein Schleim am Scheideneingang</td>
-  <td class="fst-bold">t</td>
 </tr>
 <tr>
+  <td class="fst-bold">-</td>
   <td>nichts gefühlt, keine Feuchtigkeit, keine Empfindung am Scheideneingang</td>
   <td class="px-3">und</td>
   <td>nichts gesehen, kein Schleim am Scheideneingang</td>
-  <td class="fst-bold">-</td>
 </tr>  
 <tr>
+  <td class="fst-bold">f</td>
   <td>feucht</td>
   <td class="px-3">aber</td>
   <td>nichts gesehen, kein Schleim am Scheideneingang</td>
-  <td class="fst-bold">f</td>
 </tr>  
 <tr>
+  <td class="fst-bold">S</td>
   <td>feucht oder nichts gefühlt</td>
   <td class="px-3">und</td>
   <td>dicklich, weißlich, trüb, cremig, klumpig, gelblich, klebrig, milchig, nicht ziehbar oder zäh</td>
-  <td class="fst-bold">S</td>
 </tr>  
 <tr>
+  <td class="fst-bold">S+</td>
   <td>feucht oder nichts gefühlt</td>
   <td class="px-3">und</td>
   <td>glasig, glasklar, glasig durchscheinend, wie rohes Eiweiß (glasig mit weißen Fäden durchsetzt), dehnbar fadenziehend, spinnbar, flüssig, so dünnflüssig, dass er "wegrinnt wie Wasser", rötlich, rotbraun gelblich-rötlich</td>
-  <td class="fst-bold">S+</td>
 </tr>
 <tr>
+  <td class="fst-bold">S+</td>
   <td>nass, schlüpfrig, rutschig, glitschig, wie eingeölt, weich, glatt</td>
   <td class="px-3">und/oder</td>
   <td>glasig, glasklar, glasig durchscheinend, wie rohes Eiweiß (glasig mit weißen Fäden durchsetzt), dehnbar, fadenziehend, spinnbar, flüssig, so dünnflüssig, dass er "wegrinnt wie Wasser", rötlich, rotbraun, gelblich-rötlich</td>
-  <td class="fst-bold">S+</td>
 </tr>
 </tbody>
 </table>

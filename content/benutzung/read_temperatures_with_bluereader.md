@@ -39,6 +39,7 @@ Um die Temperaturmessungen des iButtons mit dem BlueReader auszulesen, gehe wie 
     <div class="mt-3">
         {{ macros.image("{static}../images/screenshot_bluereader_2.png","Screenshot zur Ortungsfreigabe", padding=4) }}
     </div>
+    </li>
     <li>
         Die App liest die neuesten Messwerte vom iButton aus. Insbesondere bei vielen auszulesenden Messwerten kann das einen Moment dauern.
     </li>

@@ -92,6 +92,6 @@ Für die Zyklus-Vorhersage reicht der erste Tag Deiner Periodenblutung. Du kanns
 
 Die iButtonCycle App ist nun einsatzbereit! 
 
-{{ macros.info("Solltest Du einen iButton zur Temperaturmessung verwenden, <a href=\"{filename}../setup_overview.md\">Sieh' Dir die verschiedenen Möglichkeiten an, wie Du die Temperaturmesswerte in der iButtonCycle App importieren kannst.</a>") }}
+{{ macros.info("Solltest Du einen iButton zur Temperaturmessung verwenden, <a href=\"{filename}../benutzung/setup_overview.md\">Sieh' Dir die verschiedenen Möglichkeiten an, wie Du die Temperaturmesswerte in der iButtonCycle App importieren kannst.</a>") }}
 
 {{ macros.info("Eine Dokumentation aller efassbaren Symptome findest Du <a href=\"{filename}../benutzung/nfp_detail_screen_explanation.md\">hier</a>") }}

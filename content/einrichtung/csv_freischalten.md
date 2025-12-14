@@ -1,6 +1,5 @@
 Title: iButton Import einrichten
 Date: 2024-03-27
-Star_prio: 2
 Summary: Import von iButton Temperaturmessungen einrichten
 
 {% import 'macros.html' as macros %}
